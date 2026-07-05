@@ -147,7 +147,7 @@ const HTML = `<!-- TopNavBar -->
 <!-- FAQ Section -->
 <section class="px-grid-margin py-stack-xl grid grid-cols-1 md:grid-cols-12 gap-grid-gutter">
 <div class="md:col-span-4">
-<h2 class="font-headline-lg text-headline-lg mb-stack-md break-words">Clarifications.</h2>
+<h2 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg mb-stack-md break-words leading-tight">Clarifications.</h2>
 <p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">Common points of friction in the supplement regulatory journey.</p>
 <div class="bg-surface-container-highest p-stack-md border-[3px] border-on-surface brutalist-shadow">
 <p class="font-ui-mono text-ui-mono">Last Updated: October 2024</p>
