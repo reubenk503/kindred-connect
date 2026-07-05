@@ -188,14 +188,14 @@ const HTML = `<!-- TopNavBar -->
 <div class="bg-on-surface text-surface p-stack-xl border-[3px] border-on-surface brutalist-shadow relative overflow-hidden">
 <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-grid-gutter items-center">
 <div>
-<h2 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl mb-stack-md">Ready for <br/><span class="text-primary-fixed italic">Approval?</span></h2>
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-stack-md leading-tight">Ready for <span class="text-primary-fixed italic">Approval?</span></h2>
 <p class="font-body-lg text-body-lg mb-stack-xl opacity-80">Stop guessing. Get a definitive regulatory roadmap for your supplement brand.</p>
 <a class="bg-primary-container text-on-primary-container px-10 py-5 border-[3px] border-on-surface font-label-caps text-label-caps brutalist-shadow brutalist-button-hover transition-transform duration-200 inline-flex items-center gap-3" href="/contact">
                             BOOK STRATEGY CALL <span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
 </a>
 </div>
-<div class="hidden md:block">
-<div class="h-64 border-[3px] border-primary-fixed bg-surface/10 backdrop-blur-sm p-stack-lg">
+<div class="hidden md:block min-w-0">
+<div class="border-[3px] border-primary-fixed bg-surface/10 backdrop-blur-sm p-stack-lg">
 <div class="font-ui-mono text-primary-fixed mb-2 flex items-center gap-2">
 <span class="w-2 h-2 rounded-full bg-primary-fixed animate-pulse"></span> SYSTEM STATUS: OPTIMIZED
                             </div>
