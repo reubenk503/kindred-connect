@@ -123,10 +123,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Anybody:wght@100..900&family=Hanken+Grotesk:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" },
     ],
-    scripts: [
-      { children: TAILWIND_CONFIG },
-      { src: "https://cdn.tailwindcss.com?plugins=forms,container-queries" },
-    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
