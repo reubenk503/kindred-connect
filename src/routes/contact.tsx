@@ -11,13 +11,13 @@ const HTML = `
                 Services <span class="material-symbols-outlined text-sm">expand_more</span>
 </a>
 <div class="absolute top-full left-0 mt-2 w-48 bg-surface border-[3px] border-on-surface brutalist-shadow opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
-<a class="block px-4 py-3 font-label-caps text-xs border-b-[2px] border-on-surface hover:bg-primary-container" href="/">Supplements</a>
-<a class="block px-4 py-3 font-label-caps text-xs border-b-[2px] border-on-surface hover:bg-primary-container" href="/">Cosmetics</a>
-<a class="block px-4 py-3 font-label-caps text-xs hover:bg-primary-container" href="/">Med Devices</a>
+<a class="block px-4 py-3 font-label-caps text-xs border-b-[2px] border-on-surface hover:bg-primary-container" href="/supplements">Supplements</a>
+<a class="block px-4 py-3 font-label-caps text-xs border-b-[2px] border-on-surface hover:bg-primary-container" href="/cosmetics">Cosmetics</a>
+<a class="block px-4 py-3 font-label-caps text-xs hover:bg-primary-container" href="/medical-devices">Med Devices</a>
 </div>
 </div>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/">Compliance</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/">Process</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/cosmetics">Cosmetics</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/medical-devices">Med Devices</a>
 <a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/case-studies">Resources</a>
 <a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/about">About</a>
 </div>
@@ -184,9 +184,9 @@ const HTML = `
 <div class="md:col-span-3">
 <h4 class="font-label-caps text-label-caps mb-6 uppercase">Expertise</h4>
 <div class="flex flex-col gap-4">
-<a class="font-body-md text-on-surface-variant hover:text-primary" href="/">Supplements</a>
-<a class="font-body-md text-on-surface-variant hover:text-primary" href="/">Cosmetics</a>
-<a class="font-body-md text-on-surface-variant hover:text-primary" href="/">Med Devices</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary" href="/supplements">Supplements</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary" href="/cosmetics">Cosmetics</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary" href="/medical-devices">Med Devices</a>
 <a class="font-body-md text-on-surface-variant hover:text-primary" href="/about">About</a>
 </div>
 </div>

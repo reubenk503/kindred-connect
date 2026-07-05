@@ -9,8 +9,8 @@ const HTML = `
 </div>
 <div class="hidden md:flex items-center gap-stack-lg">
 <a class="font-label-caps text-label-caps text-primary border-b-[3px] border-primary pb-1 transition-colors duration-200" href="/case-studies">Services</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200" href="/">Compliance</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200" href="/">Process</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200" href="/cosmetics">Cosmetics</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200" href="/medical-devices">Med Devices</a>
 <a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200" href="/case-studies">Resources</a>
 <a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200" href="/about">About</a>
 </div>
@@ -242,8 +242,8 @@ const HTML = `
 <h5 class="font-label-caps text-label-caps mb-stack-md uppercase">Navigation</h5>
 <ul class="space-y-2">
 <li><a class="font-body-md text-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-colors duration-150" href="/case-studies">Services</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-colors duration-150" href="/">Compliance</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-colors duration-150" href="/">Process</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-colors duration-150" href="/cosmetics">Cosmetics</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-colors duration-150" href="/medical-devices">Med Devices</a></li>
 <li><a class="font-body-md text-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-colors duration-150" href="/about">About</a></li>
 </ul>
 </div>

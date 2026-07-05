@@ -7,9 +7,9 @@ const HTML = `
 <nav class="flex justify-between items-center px-grid-margin py-stack-md w-full">
 <a class="font-headline-lg text-headline-lg uppercase tracking-tighter text-on-surface hover:text-primary transition-colors duration-200" href="/">Agota Csaszar</a>
 <div class="hidden md:flex items-center gap-stack-lg">
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="/">Services</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="/">Compliance</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="/">Process</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="/supplements">Supplements</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="/cosmetics">Cosmetics</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="/medical-devices">Med Devices</a>
 <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="/case-studies">Resources</a>
 <a class="font-label-caps text-label-caps text-primary border-b-[3px] border-primary pb-1" href="#">About</a>
 </div>
@@ -165,8 +165,8 @@ const HTML = `
 <div class="md:col-span-2">
 <h4 class="font-label-caps text-label-caps mb-stack-md uppercase">Navigation</h4>
 <ul class="space-y-stack-sm">
-<li><a class="font-body-md text-on-surface-variant hover:text-primary" href="/">Services</a></li>
-<li><a class="font-body-md text-on-surface-variant hover:text-primary" href="/">Compliance</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary" href="/supplements">Supplements</a></li>
+<li><a class="font-body-md text-on-surface-variant hover:text-primary" href="/cosmetics">Cosmetics</a></li>
 <li><a class="font-body-md text-on-surface-variant hover:text-primary" href="#">About</a></li>
 </ul>
 </div>
