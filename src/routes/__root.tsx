@@ -139,6 +139,8 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
+        <script dangerouslySetInnerHTML={{ __html: TAILWIND_CONFIG }} />
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries" />
         <style dangerouslySetInnerHTML={{ __html: BRUTALIST_CSS }} />
       </head>
       <body>
