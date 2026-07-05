@@ -1,23 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 
-const HTML = `
-<!-- TopNavBar -->
-<nav class="w-full sticky top-0 z-50 bg-surface dark:bg-surface border-b-[3px] border-on-surface flex justify-between items-center px-grid-margin py-stack-md">
-<a class="font-headline-lg text-headline-lg uppercase tracking-tighter text-on-surface dark:text-on-surface hover:text-primary transition-colors" href="/">
-            Agota Csaszar
-        </a>
-<div class="hidden md:flex gap-stack-lg items-center">
-<a class="font-label-caps text-label-caps text-primary border-b-[3px] border-primary pb-1 transition-colors duration-200" href="/supplements">Supplements</a>
-<a class="font-label-caps text-label-caps text-on-surface dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="/cosmetics">Cosmetics</a>
-<a class="font-label-caps text-label-caps text-on-surface dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="/medical-devices">Med Devices</a>
-<a class="font-label-caps text-label-caps text-on-surface dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="/case-studies">Resources</a>
-<a class="font-label-caps text-label-caps text-on-surface dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="/about">About</a>
-</div>
-<a class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full border-[3px] border-on-surface font-label-caps brutalist-shadow brutalist-active hover:-translate-y-0.5 transition-all inline-block uppercase" href="/contact">
-            Get Started
-        </a>
-</nav>
+const HTML = `<!-- TopNavBar -->
+
 <main class="w-full">
 <!-- Hero Section -->
 <section class="px-grid-margin py-stack-xl grid grid-cols-1 md:grid-cols-12 gap-grid-gutter border-b-[3px] border-on-surface bg-surface">
@@ -167,42 +152,7 @@ const HTML = `
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full border-t-[3px] border-on-surface bg-surface-container-highest dark:bg-inverse-surface grid grid-cols-1 md:grid-cols-12 gap-grid-gutter px-grid-margin py-stack-xl">
-<div class="md:col-span-4 flex flex-col gap-stack-md text-on-surface">
-<a class="font-headline-lg text-headline-lg font-black uppercase hover:text-primary transition-colors" href="/">Agota Csaszar</a>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
-                Precision regulatory services for the medical and life sciences industry. Based in London, serving global innovators.
-            </p>
-</div>
-<div class="md:col-span-2">
-<h5 class="font-label-caps text-label-caps uppercase mb-stack-md text-primary">Company</h5>
-<ul class="space-y-stack-sm font-body-md text-body-md text-on-surface-variant">
-<li><a class="hover:text-primary transition-colors" href="/about">About Us</a></li>
-<li><a class="hover:text-primary transition-colors" href="/case-studies">Case Studies</a></li>
-<li><a class="hover:text-primary transition-colors" href="/contact">Contact</a></li>
-</ul>
-</div>
-<div class="md:col-span-2">
-<h5 class="font-label-caps text-label-caps uppercase mb-stack-md text-primary">Services</h5>
-<ul class="space-y-stack-sm font-body-md text-body-md text-on-surface-variant">
-<li><a class="hover:text-primary transition-colors" href="/">Medical Devices</a></li>
-<li><a class="hover:text-primary transition-colors" href="/supplements">Supplements</a></li>
-<li><a class="hover:text-primary transition-colors" href="/cosmetics">Cosmetics</a></li>
-</ul>
-</div>
-<div class="md:col-span-4">
-<h5 class="font-label-caps text-label-caps uppercase mb-stack-md text-primary">Legal</h5>
-<div class="flex flex-wrap gap-4 font-body-md text-body-md text-on-surface-variant">
-<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
-<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
-<a class="hover:text-primary transition-colors" href="#">Regulatory Standards</a>
-<a class="hover:text-primary transition-colors" href="#">Sitemap</a>
-</div>
-<div class="mt-stack-xl font-body-md text-body-md text-on-surface-variant italic">
-                © 2024 Agota Csaszar Regulatory Services. Precision in Compliance.
-            </div>
-</div>
-</footer>
+
 <script>
         // Simple micro-interaction for buttons
         document.querySelectorAll('.brutalist-active').forEach(button => {
@@ -219,8 +169,7 @@ const HTML = `
                 button.style.boxShadow = '';
             });
         });
-    </script>
-`;
+    </script>`;
 
 export const Route = createFileRoute("/medical-devices")({
   head: () => ({

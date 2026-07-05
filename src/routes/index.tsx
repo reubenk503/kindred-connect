@@ -1,24 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 
-const HTML = `
-<!-- Top Navigation Bar -->
-<nav class="w-full sticky top-0 z-50 bg-surface border-b-[3px] border-on-surface flex justify-between items-center px-grid-margin py-stack-md">
-<a class="font-headline-lg text-[24px] lg:text-headline-lg uppercase tracking-tighter text-on-surface font-black hover:text-primary transition-colors" href="/">
-            Agota Csaszar
-        </a>
-<div class="hidden md:flex gap-grid-gutter items-center">
-<a class="font-label-caps text-label-caps text-primary border-b-[3px] border-primary pb-1" href="/">Home</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200" href="/supplements">Supplements</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200" href="/cosmetics">Cosmetics</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200" href="/medical-devices">Med Devices</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200" href="/case-studies">Resources</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200" href="/about">About</a>
-</div>
-<a class="bg-primary-container text-on-primary-fixed font-label-caps text-label-caps px-stack-lg py-stack-sm border-[3px] border-on-surface brutalist-shadow brutalist-active uppercase text-center" href="/contact">
-            Get Started
-        </a>
-</nav>
+const HTML = `<!-- Top Navigation Bar -->
+
 <!-- Hero Section -->
 <header class="relative px-grid-margin py-stack-xl lg:py-32 grid grid-cols-1 lg:grid-cols-12 gap-grid-gutter overflow-hidden">
 <div class="lg:col-span-8 flex flex-col justify-center z-10">
@@ -289,45 +273,7 @@ const HTML = `
 </div>
 </section>
 <!-- Footer -->
-<footer class="w-full bg-surface-container-highest border-t-[3px] border-on-surface px-grid-margin py-stack-xl">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-grid-gutter mb-stack-xl">
-<div class="md:col-span-5">
-<a class="font-headline-lg text-headline-lg font-black text-on-surface mb-stack-md uppercase hover:text-primary transition-colors inline-block" href="/">
-                    Agota Csaszar
-                </a>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
-                    Strategic regulatory consultancy for high-risk product categories. Delivering precision compliance on a global scale.
-                </p>
-</div>
-<div class="md:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-grid-gutter">
-<div class="flex flex-col gap-stack-sm">
-<span class="font-label-caps text-label-caps uppercase mb-2">Expertise</span>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="/supplements">Supplements</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="/cosmetics">Cosmetics</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="/medical-devices">Med Devices</a>
-</div>
-<div class="flex flex-col gap-stack-sm">
-<span class="font-label-caps text-label-caps uppercase mb-2">Legal</span>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Cookies</a>
-</div>
-<div class="flex flex-col gap-stack-sm">
-<span class="font-label-caps text-label-caps uppercase mb-2">Contact</span>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">LinkedIn</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Newsletter</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="/contact">Office Locations</a>
-</div>
-</div>
-</div>
-<div class="pt-stack-md border-t-[3px] border-on-surface flex flex-col md:flex-row justify-between items-center gap-stack-md">
-<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Agota Csaszar Regulatory Services. Precision in Compliance.</p>
-<div class="flex gap-grid-gutter">
-<span class="font-ui-mono text-[10px] uppercase tracking-widest bg-on-surface text-surface px-2 py-1">ISO 9001:2015</span>
-<span class="font-ui-mono text-[10px] uppercase tracking-widest bg-on-surface text-surface px-2 py-1">GDPR Compliant</span>
-</div>
-</div>
-</footer>
+
 <script>
         // Micro-interactions for buttons
         document.querySelectorAll('button, a').forEach(el => {
@@ -356,8 +302,7 @@ const HTML = `
         document.querySelectorAll('section').forEach(section => {
             section.classList.add('transition-opacity', 'duration-1000');
         });
-    </script>
-`;
+    </script>`;
 
 export const Route = createFileRoute("/")({
   head: () => ({

@@ -1,21 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 
-const HTML = `
-<!-- TopNavBar -->
-<header class="w-full sticky top-0 z-50 bg-surface border-b-[3px] border-on-surface flex justify-between items-center px-grid-margin py-stack-md">
-<div class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase tracking-tighter text-on-surface cursor-pointer" onclick="window.location.href='/'">Agota Csaszar</div>
-<nav class="hidden md:flex gap-8">
-<a class="font-label-caps text-label-caps text-primary border-b-[3px] border-primary pb-1 uppercase" href="#">Services</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/cosmetics">Cosmetics</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/medical-devices">Med Devices</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/case-studies">Resources</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/about">About</a>
-</nav>
-<button class="bg-primary-container text-on-primary-fixed font-label-caps text-label-caps px-6 py-3 rounded-full border-[3px] border-on-surface brutalist-shadow brutalist-shadow-active uppercase" onclick="window.location.href='/contact'">
-            Get Started
-        </button>
-</header>
+const HTML = `<!-- TopNavBar -->
+
 <main class="min-h-screen">
 <!-- Hero Section -->
 <section class="grid grid-cols-1 md:grid-cols-12 w-full border-b-[3px] border-on-surface">
@@ -148,38 +135,7 @@ const HTML = `
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full bg-surface-container-highest border-t-[3px] border-on-surface grid grid-cols-1 md:grid-cols-12 gap-grid-gutter px-grid-margin py-stack-xl">
-<div class="md:col-span-4">
-<div class="font-headline-lg text-headline-lg font-black text-on-surface uppercase mb-stack-md cursor-pointer" onclick="window.location.href='/'">Agota Csaszar</div>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">© 2024 Agota Csaszar Regulatory Services. Precision in Compliance.</p>
-</div>
-<div class="md:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-stack-lg">
-<div class="flex flex-col gap-2">
-<span class="font-label-caps text-label-caps text-secondary uppercase mb-2">Legal</span>
-<a class="font-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-all" href="#">Sitemap</a>
-<a class="font-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-all" href="#">Privacy Policy</a>
-<a class="font-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-all" href="#">Terms of Service</a>
-</div>
-<div class="flex flex-col gap-2">
-<span class="font-label-caps text-label-caps text-secondary uppercase mb-2">Standards</span>
-<a class="font-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-all" href="/">Regulatory Standards</a>
-<a class="font-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-all" href="/">UK-EU Alignment</a>
-</div>
-<div class="flex flex-col gap-2">
-<span class="font-label-caps text-label-caps text-secondary uppercase mb-2">Services</span>
-<a class="font-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-all font-bold text-primary" href="#">Cosmetics</a>
-<a class="font-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-all" href="/supplements">Supplements</a>
-<a class="font-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-all" href="/medical-devices">Med Devices</a>
-</div>
-<div class="flex flex-col gap-2">
-<span class="font-label-caps text-label-caps text-secondary uppercase mb-2">Social</span>
-<div class="flex gap-4">
-<span class="material-symbols-outlined cursor-pointer hover:text-primary">share</span>
-<span class="material-symbols-outlined cursor-pointer hover:text-primary">language</span>
-</div>
-</div>
-</div>
-</footer>
+
 <script>
         // Simple scroll interaction for the header
         window.addEventListener('scroll', () => {
@@ -198,8 +154,7 @@ const HTML = `
                 // Potential micro-interaction
             });
         });
-    </script>
-`;
+    </script>`;
 
 export const Route = createFileRoute("/cosmetics")({
   head: () => ({
