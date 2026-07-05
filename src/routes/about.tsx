@@ -17,7 +17,7 @@ const HTML = `<!-- TopNavBar -->
 </div>
 <div class="md:col-span-4 flex justify-end">
 <div class="w-full aspect-square border-[3px] border-on-surface brutalist-shadow bg-surface-container-highest relative overflow-hidden group">
-<img alt="Professional editorial portrait of Agota Csaszar in a structured teal blazer" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbN9pzJLdoz24NYxoe69FiB2f78HDSEwuBQz91bPyiFj2651C8H1v-2q2_4Q8gH-JFfxuKb_e9uER3rNeiA5LWZL3SeuZ-rKxj9R4UbOywq2DidwSJjba3WHlNRU47bBBCrW3GOruzWGtHEIy57DLXqGL1LC_PHdQZQKaJr2T1e_XGNXJ9dsGr_ljtZLH0e6DxDmXcVstx1B8BjZe_LHpZB3Uu5j3W3rO5bgins-fjY64zAFy6Fxqk8xTFmsohg_coyf-G2XpCWwRc"/>
+<img alt="Professional editorial portrait of Agota Csaszar in a structured teal blazer" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="/images/hero-portrait.jpg"/>
 </div>
 </div>
 </div>

@@ -26,7 +26,7 @@ const HTML = `<!-- Top Navigation Bar -->
 <!-- Asymmetric visual element -->
 <div class="absolute w-full h-[120%] border-[3px] border-on-surface rotate-3 translate-x-12 translate-y-8 bg-secondary-container/10 -z-10"></div>
 <div class="w-full aspect-[3/4] border-[3px] border-on-surface bg-surface-container relative z-10 overflow-hidden brutalist-shadow">
-<img class="w-full h-full object-cover grayscale contrast-125" data-alt="A striking editorial portrait of a professional woman looking confident and authoritative, high-fashion aesthetic, sharp lines, neutral studio lighting with high contrast shadows. The palette is dominated by cream, charcoal, and a pop of electric teal. Modern neo-brutalist photography style with a 12-column grid overlay." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE1nb4NA2UvAyQlYNtoes-JXho7TC0VjfKKurRNOXH_YAX-0iOHqqtbz4ffBjZVehVnKSdGY5UxvO_P_2RDX3gv5yWnoJmxzqps9dzBcRWU5RUHDUrdQHrq2m1IKbGWyfjwS8_wpSV-9bhwW7unOUFkId5pVCZUqGM2lOUIJyTxyfuRC_1Sc63qic9T6gHz7s4A-dLtiI9UBSLhacdnbGQ9FmjwddQ7WyeKdjBXekxQX81wKiNLXC_VhzoGvZKtNeEUNQJwjRYHBq1"/>
+<img class="w-full h-full object-cover grayscale contrast-125" data-alt="A striking editorial portrait of a professional woman looking confident and authoritative, high-fashion aesthetic, sharp lines, neutral studio lighting with high contrast shadows. The palette is dominated by cream, charcoal, and a pop of electric teal. Modern neo-brutalist photography style with a 12-column grid overlay." src="/images/hero-portrait.jpg"/>
 <div class="absolute bottom-0 left-0 bg-primary-container p-stack-md border-t-[3px] border-r-[3px] border-on-surface">
 <span class="font-label-caps text-label-caps text-on-primary-fixed uppercase">EST. 2014</span>
 </div>
