@@ -1,23 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 
-const HTML = `
-<!-- TopNavBar -->
-<header class="w-full sticky top-0 z-50 bg-surface border-b-[3px] border-on-surface">
-<nav class="flex justify-between items-center px-grid-margin py-stack-md w-full">
-<a class="font-headline-lg text-headline-lg uppercase tracking-tighter text-on-surface hover:text-primary transition-colors duration-200" href="/">Agota Csaszar</a>
-<div class="hidden md:flex items-center gap-stack-lg">
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="/supplements">Supplements</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="/cosmetics">Cosmetics</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="/medical-devices">Med Devices</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-200" href="/case-studies">Resources</a>
-<a class="font-label-caps text-label-caps text-primary border-b-[3px] border-primary pb-1" href="#">About</a>
-</div>
-<a class="inline-block bg-primary-container text-on-primary-container px-6 py-2 border-[3px] border-on-surface brutalist-shadow brutalist-shadow-active font-label-caps uppercase transition-all" href="/contact">
-                Get Started
-            </a>
-</nav>
-</header>
+const HTML = `<!-- TopNavBar -->
+
 <main class="w-full">
 <!-- Hero Section: Identity Anchor -->
 <section class="px-grid-margin py-stack-xl border-b-[3px] border-on-surface">
@@ -154,44 +139,7 @@ const HTML = `
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full bg-surface-container-highest border-t-[3px] border-on-surface">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-grid-gutter px-grid-margin py-stack-xl w-full">
-<div class="md:col-span-4">
-<a class="font-headline-lg text-headline-lg font-black text-on-surface mb-stack-md uppercase hover:text-primary transition-colors inline-block" href="/">Agota Csaszar</a>
-<p class="font-body-md text-on-surface-variant max-w-xs">
-                    Redefining the standard for modern regulatory excellence through architectural precision.
-                </p>
-</div>
-<div class="md:col-span-2">
-<h4 class="font-label-caps text-label-caps mb-stack-md uppercase">Navigation</h4>
-<ul class="space-y-stack-sm">
-<li><a class="font-body-md text-on-surface-variant hover:text-primary" href="/supplements">Supplements</a></li>
-<li><a class="font-body-md text-on-surface-variant hover:text-primary" href="/cosmetics">Cosmetics</a></li>
-<li><a class="font-body-md text-on-surface-variant hover:text-primary" href="#">About</a></li>
-</ul>
-</div>
-<div class="md:col-span-2">
-<h4 class="font-label-caps text-label-caps mb-stack-md uppercase">Legal</h4>
-<ul class="space-y-stack-sm">
-<li><a class="font-body-md text-on-surface-variant hover:text-primary" href="#">Sitemap</a></li>
-<li><a class="font-body-md text-on-surface-variant hover:text-primary" href="#">Privacy Policy</a></li>
-<li><a class="font-body-md text-on-surface-variant hover:text-primary" href="#">Terms of Service</a></li>
-</ul>
-</div>
-<div class="md:col-span-4 flex flex-col items-start md:items-end">
-<h4 class="font-label-caps text-label-caps mb-stack-md uppercase">Stay Informed</h4>
-<div class="flex w-full max-w-sm">
-<input class="flex-grow border-[3px] border-on-surface p-2 font-ui-mono focus:ring-primary focus:border-primary" placeholder="Your corporate email" type="email"/>
-<button class="bg-on-surface text-white px-4 border-y-[3px] border-r-[3px] border-on-surface">
-<span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-<div class="px-grid-margin py-stack-md border-t-[3px] border-on-surface text-center">
-<p class="font-body-md text-on-surface-variant">© 2024 Agota Csaszar Regulatory Services. Precision in Compliance.</p>
-</div>
-</footer>
+
 <script>
         // Simple scroll interaction for header
         window.addEventListener('scroll', () => {
@@ -202,8 +150,7 @@ const HTML = `
                 header.classList.remove('shadow-lg');
             }
         });
-    </script>
-`;
+    </script>`;
 
 export const Route = createFileRoute("/about")({
   head: () => ({

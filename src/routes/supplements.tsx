@@ -1,25 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 
-const HTML = `
-<!-- TopNavBar -->
-<nav class="w-full sticky top-0 z-50 bg-surface border-b-[3px] border-on-surface flex justify-between items-center px-grid-margin py-stack-md">
-<div class="flex items-center">
-<a class="font-headline-lg text-headline-lg uppercase tracking-tighter text-on-surface hover:text-primary transition-colors duration-200" href="/">Agota Csaszar</a>
-</div>
-<div class="hidden md:flex items-center gap-stack-lg">
-<a class="font-label-caps text-label-caps text-primary border-b-[3px] border-primary pb-1 transition-colors duration-200" href="/case-studies">Services</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200" href="/cosmetics">Cosmetics</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200" href="/medical-devices">Med Devices</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200" href="/case-studies">Resources</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200" href="/about">About</a>
-</div>
-<div>
-<a class="inline-block bg-primary-container text-on-primary-container px-6 py-2 rounded-full border-[3px] border-on-surface font-label-caps text-label-caps brutalist-shadow brutalist-button-hover transition-transform duration-200 uppercase" href="/contact">
-                Get Started
-            </a>
-</div>
-</nav>
+const HTML = `<!-- TopNavBar -->
+
 <main>
 <!-- Hero Section -->
 <section class="px-grid-margin py-stack-xl grid grid-cols-1 md:grid-cols-12 gap-grid-gutter items-center">
@@ -231,41 +214,7 @@ const HTML = `
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full bg-surface-container-highest border-t-[3px] border-on-surface grid grid-cols-1 md:grid-cols-12 gap-grid-gutter px-grid-margin py-stack-xl">
-<div class="md:col-span-4">
-<span class="font-headline-lg text-headline-lg font-black text-on-surface">Agota Csaszar</span>
-<p class="font-body-md text-body-md mt-stack-md text-on-surface-variant max-w-xs">
-                © 2024 Agota Csaszar Regulatory Services. Precision in Compliance. High-contrast advisory for high-stakes industries.
-            </p>
-</div>
-<div class="md:col-span-2">
-<h5 class="font-label-caps text-label-caps mb-stack-md uppercase">Navigation</h5>
-<ul class="space-y-2">
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-colors duration-150" href="/case-studies">Services</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-colors duration-150" href="/cosmetics">Cosmetics</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-colors duration-150" href="/medical-devices">Med Devices</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-colors duration-150" href="/about">About</a></li>
-</ul>
-</div>
-<div class="md:col-span-2">
-<h5 class="font-label-caps text-label-caps mb-stack-md uppercase">Legal</h5>
-<ul class="space-y-2">
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-colors duration-150" href="#">Privacy Policy</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-colors duration-150" href="#">Terms of Service</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-colors duration-150" href="#">Regulatory Standards</a></li>
-<li><a class="font-body-md text-body-md text-on-surface-variant hover:bg-primary hover:text-on-primary px-1 transition-colors duration-150" href="#">Sitemap</a></li>
-</ul>
-</div>
-<div class="md:col-span-4">
-<h5 class="font-label-caps text-label-caps mb-stack-md uppercase">Stay Updated</h5>
-<div class="flex">
-<input class="w-full bg-white border-[3px] border-on-surface p-2 font-ui-mono focus:ring-4 focus:ring-primary-container outline-none" placeholder="Regulatory Alerts Email" type="email"/>
-<button class="bg-primary text-on-primary px-4 border-[3px] border-l-0 border-on-surface brutalist-active">
-                    JOIN
-                </button>
-</div>
-</div>
-</footer>
+
 <script>
         // Micro-interactions
         document.querySelectorAll('details').forEach((el) => {
@@ -277,8 +226,7 @@ const HTML = `
                 }
             });
         });
-    </script>
-`;
+    </script>`;
 
 export const Route = createFileRoute("/supplements")({
   head: () => ({

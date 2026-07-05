@@ -1,30 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 
-const HTML = `
-<!-- TopNavBar -->
-<nav class="w-full sticky top-0 z-50 bg-surface border-b-[3px] border-on-surface flex justify-between items-center px-grid-margin py-stack-md">
-<a class="font-headline-lg text-headline-lg uppercase tracking-tighter text-on-surface hover:text-primary transition-colors" href="/">Agota Csaszar</a>
-<div class="hidden md:flex items-center gap-10">
-<div class="relative group">
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 flex items-center gap-1 uppercase" href="/">
-                Services <span class="material-symbols-outlined text-sm">expand_more</span>
-</a>
-<div class="absolute top-full left-0 mt-2 w-48 bg-surface border-[3px] border-on-surface brutalist-shadow opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
-<a class="block px-4 py-3 font-label-caps text-xs border-b-[2px] border-on-surface hover:bg-primary-container" href="/supplements">Supplements</a>
-<a class="block px-4 py-3 font-label-caps text-xs border-b-[2px] border-on-surface hover:bg-primary-container" href="/cosmetics">Cosmetics</a>
-<a class="block px-4 py-3 font-label-caps text-xs hover:bg-primary-container" href="/medical-devices">Med Devices</a>
-</div>
-</div>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/cosmetics">Cosmetics</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/medical-devices">Med Devices</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/case-studies">Resources</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/about">About</a>
-</div>
-<a class="bg-primary text-on-primary border-[3px] border-on-surface px-6 py-2 font-label-caps text-label-caps active-tab transition-all" href="#">
-        Get Started
-    </a>
-</nav>
+const HTML = `<!-- TopNavBar -->
+
 <main class="w-full">
 <!-- Hero Section -->
 <section class="px-grid-margin py-stack-xl border-b-[3px] border-on-surface bg-surface-container-low">
@@ -165,42 +143,7 @@ const HTML = `
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full border-t-[3px] border-on-surface bg-surface-container-highest px-grid-margin py-stack-xl">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-grid-gutter">
-<div class="md:col-span-6">
-<a class="font-headline-lg text-headline-lg font-black text-on-surface mb-stack-md uppercase hover:text-primary transition-colors block" href="/">Agota Csaszar</a>
-<p class="font-body-md text-on-surface-variant max-w-sm mb-stack-lg">
-                © 2024 Agota Csaszar Regulatory Services. Precision in Compliance. All rights reserved.
-            </p>
-<div class="flex gap-6">
-<a class="w-12 h-12 flex items-center justify-center border-[3px] border-on-surface hover:bg-primary hover:text-on-primary transition-all" href="#">
-<span class="material-symbols-outlined">link</span>
-</a>
-<a class="w-12 h-12 flex items-center justify-center border-[3px] border-on-surface hover:bg-primary hover:text-on-primary transition-all" href="#">
-<span class="material-symbols-outlined">public</span>
-</a>
-</div>
-</div>
-<div class="md:col-span-3">
-<h4 class="font-label-caps text-label-caps mb-6 uppercase">Expertise</h4>
-<div class="flex flex-col gap-4">
-<a class="font-body-md text-on-surface-variant hover:text-primary" href="/supplements">Supplements</a>
-<a class="font-body-md text-on-surface-variant hover:text-primary" href="/cosmetics">Cosmetics</a>
-<a class="font-body-md text-on-surface-variant hover:text-primary" href="/medical-devices">Med Devices</a>
-<a class="font-body-md text-on-surface-variant hover:text-primary" href="/about">About</a>
-</div>
-</div>
-<div class="md:col-span-3">
-<h4 class="font-label-caps text-label-caps mb-6 uppercase">Resources</h4>
-<div class="flex flex-col gap-4">
-<a class="font-body-md text-on-surface-variant hover:text-primary" href="/case-studies">Case Studies</a>
-<a class="font-body-md text-on-surface-variant hover:text-primary" href="#">Privacy Policy</a>
-<a class="font-body-md text-on-surface-variant hover:text-primary" href="#">Regulatory Standards</a>
-<a class="font-body-md text-on-surface-variant hover:text-primary" href="#">Terms of Service</a>
-</div>
-</div>
-</div>
-</footer>
+
 <script>
     // Form micro-interaction
     const inputs = document.querySelectorAll('input, textarea, select');
@@ -222,8 +165,7 @@ const HTML = `
             setTimeout(() => this.classList.remove('scale-95'), 100);
         });
     });
-</script>
-`;
+</script>`;
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
