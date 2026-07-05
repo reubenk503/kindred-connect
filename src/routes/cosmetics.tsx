@@ -7,8 +7,8 @@ const HTML = `
 <div class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase tracking-tighter text-on-surface cursor-pointer" onclick="window.location.href='/'">Agota Csaszar</div>
 <nav class="hidden md:flex gap-8">
 <a class="font-label-caps text-label-caps text-primary border-b-[3px] border-primary pb-1 uppercase" href="#">Services</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/">Compliance</a>
-<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/">Process</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/cosmetics">Cosmetics</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/medical-devices">Med Devices</a>
 <a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/case-studies">Resources</a>
 <a class="font-label-caps text-label-caps text-on-surface hover:text-primary transition-colors duration-200 uppercase" href="/about">About</a>
 </nav>

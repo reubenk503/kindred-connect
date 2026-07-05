@@ -8,9 +8,9 @@ const HTML = `
             Agota Csaszar
         </a>
 <div class="hidden md:flex gap-stack-lg items-center">
-<a class="font-label-caps text-label-caps text-primary border-b-[3px] border-primary pb-1 transition-colors duration-200" href="/">Services</a>
-<a class="font-label-caps text-label-caps text-on-surface dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="/">Compliance</a>
-<a class="font-label-caps text-label-caps text-on-surface dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="/">Process</a>
+<a class="font-label-caps text-label-caps text-primary border-b-[3px] border-primary pb-1 transition-colors duration-200" href="/supplements">Supplements</a>
+<a class="font-label-caps text-label-caps text-on-surface dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="/cosmetics">Cosmetics</a>
+<a class="font-label-caps text-label-caps text-on-surface dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="/medical-devices">Med Devices</a>
 <a class="font-label-caps text-label-caps text-on-surface dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="/case-studies">Resources</a>
 <a class="font-label-caps text-label-caps text-on-surface dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200" href="/about">About</a>
 </div>
