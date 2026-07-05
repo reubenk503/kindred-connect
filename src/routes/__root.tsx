@@ -151,7 +151,9 @@ function RootComponent() {
   const { queryClient } = Route.useRouteContext();
   return (
     <QueryClientProvider client={queryClient}>
+      <SiteNav />
       <Outlet />
+      <SiteFooter />
     </QueryClientProvider>
   );
 }
