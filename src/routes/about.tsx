@@ -129,10 +129,10 @@ const HTML = `<!-- TopNavBar -->
 <section class="px-grid-margin py-stack-xl flex flex-col items-center text-center">
 <h2 class="font-display-xl text-display-xl-mobile md:text-display-xl uppercase mb-stack-lg">Ready for <span class="text-primary">Precision?</span></h2>
 <div class="flex flex-col sm:flex-row gap-stack-md">
-<a class="px-12 py-4 bg-primary text-white border-[3px] border-on-surface brutalist-shadow brutalist-shadow-hover active:translate-y-1 transition-all font-label-caps text-lg uppercase inline-block" href="/contact">
+<a class="px-6 sm:px-12 py-4 bg-primary text-white border-[3px] border-on-surface brutalist-shadow brutalist-shadow-hover active:translate-y-1 transition-all font-label-caps text-base sm:text-lg uppercase inline-block text-center" href="/contact">
                     Book a Consultation
                 </a>
-<a class="px-12 py-4 bg-white text-on-surface border-[3px] border-on-surface brutalist-shadow brutalist-shadow-hover active:translate-y-1 transition-all font-label-caps text-lg uppercase inline-block" href="/">
+<a class="px-6 sm:px-12 py-4 bg-white text-on-surface border-[3px] border-on-surface brutalist-shadow brutalist-shadow-hover active:translate-y-1 transition-all font-label-caps text-base sm:text-lg uppercase inline-block text-center" href="/">
                     Our Process
                 </a>
 </div>

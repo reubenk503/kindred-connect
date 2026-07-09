@@ -27,7 +27,7 @@ const HTML = `<!-- TopNavBar -->
 <div class="group border-[3px] border-on-surface bg-surface-container-lowest transition-all duration-300 brutalist-shadow brutalist-shadow-hover">
 <div class="relative overflow-hidden border-b-[3px] border-on-surface aspect-[16/9]">
 <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A professional medical technology environment with high-contrast laboratory equipment and clean teal accents. The scene is shot in a high-key architectural style, featuring sharp shadows and a minimalist aesthetic typical of neo-brutalist design. Medical professionals in crisp white lab coats are blurred in the background, emphasizing a high-tech surgical laser in the foreground under bright, cool-toned clinical lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6R1NTrTKsajsDYHDVOX5Xvn-84br_eWUMOmiNtvCRNfSoLw2dJ8PEaOcbEVJX1qKemkr_JR8cXVpkfHIcCyV1uTynShXT2qdNyxzBGDCYryYmn_EMCmMPv9HWSzKEMqkFScAUocDr0BTXa3LFzil3StUi5LQEd-mBB2AhBAqRh9VRyFbT2X94XjYgxeJjckxq61L11lRE_ioxiCXT03oBEuLxX4-Axvx9CU5_F3t4aXsJkXxGK7FlVc0BmE25_WedaK2XAZDybRkb"/>
-<div class="absolute top-4 left-4 flex gap-2">
+<div class="absolute top-3 left-3 right-3 flex flex-wrap gap-2">
 <span class="font-label-caps text-label-caps bg-on-surface text-surface px-3 py-1 uppercase">MedTech</span>
 <span class="font-label-caps text-label-caps bg-primary text-white px-3 py-1 uppercase">EU MDR</span>
 </div>
@@ -53,7 +53,7 @@ const HTML = `<!-- TopNavBar -->
 <div class="group border-[3px] border-on-surface bg-surface-container-lowest transition-all duration-300 brutalist-shadow brutalist-shadow-hover">
 <div class="relative overflow-hidden border-b-[3px] border-on-surface aspect-[16/9]">
 <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Close-up artistic shot of premium skincare bottles with vibrant coral and cream branding. The lighting is harsh and direct, creating deep, dramatic shadows against a solid charcoal background. The composition is geometric and asymmetric, echoing an editorial high-fashion layout. Droplets of serum are visible on the glass, reflecting the intense primary teal light sources used for accentuation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqQuxQQlp-WiE-bgRM-Hds7HqWURXQku4N2my_vjJTtEWjeHHv9a86n6hoRbYvkogUTtKI96FLUMheh8odpTs6NFBPa5C7htec4_rM1SclA5Jduxksrn_jnu7we9YeG3STu4jJ41R2eJ642byjPt8W7kIbdp8lsCkFbuDTYlj-6oIyOZcdYGblQcYTTvEnGzl30oTr8IKTncZTRPVy9WU-Bme0QeQ-2pf6IwKIA_TFnlH5dzMy72ta1doZNrzOlPY7Q-n6ZcqBAt97"/>
-<div class="absolute top-4 left-4 flex gap-2">
+<div class="absolute top-3 left-3 right-3 flex flex-wrap gap-2">
 <span class="font-label-caps text-label-caps bg-on-surface text-surface px-3 py-1 uppercase">Cosmetics</span>
 <span class="font-label-caps text-label-caps bg-primary text-white px-3 py-1 uppercase">Expansion</span>
 </div>
@@ -79,7 +79,7 @@ const HTML = `<!-- TopNavBar -->
 <div class="group border-[3px] border-on-surface bg-surface-container-lowest transition-all duration-300 brutalist-shadow brutalist-shadow-hover">
 <div class="relative overflow-hidden border-b-[3px] border-on-surface aspect-[16/9]">
 <img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A futuristic digital data dashboard displayed on a series of vertical monitors in a dark, high-contrast control room. The UI elements on the screens are neon teal and coral red against black backgrounds. The room features industrial textures like brushed metal and exposed concrete. Sharp, direct lighting illuminates the keyboards and interfaces, creating a mood of intense focus and technological precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4DWG2ROguqdFA4QdraLM_ab-mIApmBRwBhVa8jrIIUXqDbxjct5VfDWg74L7yhqPRnEbzi8t8WUbdIuVvbRwI6TFurwGrJ9Fo9CVNLQGyKRnkcKp5Dml0kIy-0PW3MdLCCLpBgApkmChgrQ2oal6fUOm3fL0wbxKghJbtw1hPLU3teVFFC-M5_3ed8h_U4EJ_Z8VYwUmk9Fz3aTsnpwNcEcojGwqN_L7etIUX54TNtmFceTgPgw0Xdqnr_Se6bz6nMxNEoxVY8RXW"/>
-<div class="absolute top-4 left-4 flex gap-2">
+<div class="absolute top-3 left-3 right-3 flex flex-wrap gap-2">
 <span class="font-label-caps text-label-caps bg-on-surface text-surface px-3 py-1 uppercase">Digital Health</span>
 <span class="font-label-caps text-label-caps bg-primary text-white px-3 py-1 uppercase">AI Software</span>
 </div>
@@ -109,7 +109,7 @@ const HTML = `<!-- TopNavBar -->
 <p class="font-body-lg text-body-lg text-surface-container mb-stack-lg">
                         We provide fixed-fee compliance audits that identify your risks before regulators do. Start your project today.
                     </p>
-<a class="bg-surface text-on-surface border-[3px] border-on-surface px-8 py-4 font-label-caps text-label-caps self-start hover:bg-secondary-container hover:text-white transition-all brutalist-shadow inline-block" href="/contact">
+<a class="bg-surface text-on-surface border-[3px] border-on-surface px-6 sm:px-8 py-4 font-label-caps text-label-caps self-start hover:bg-secondary-container hover:text-white transition-all brutalist-shadow inline-block max-w-full" href="/contact">
                         BOOK A CONSULTATION
                     </a>
 </div>

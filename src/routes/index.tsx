@@ -14,10 +14,10 @@ const HTML = `<!-- Top Navigation Bar -->
                 Navigating complex frameworks like FSA, EFSA, and MDR with surgical accuracy. We turn regulatory hurdles into market advantages.
             </p>
 <div class="flex flex-wrap gap-grid-gutter">
-<a class="bg-primary-container text-on-primary-fixed font-label-caps text-label-caps px-10 py-5 border-[3px] border-on-surface brutalist-shadow-hover transition-all duration-200 brutalist-active uppercase text-lg text-center" href="/contact">
+<a class="bg-primary-container text-on-primary-fixed font-label-caps text-label-caps px-6 sm:px-10 py-4 sm:py-5 border-[3px] border-on-surface brutalist-shadow-hover transition-all duration-200 brutalist-active uppercase text-base sm:text-lg text-center max-w-full" href="/contact">
                     Book Consultation
                 </a>
-<a class="bg-surface text-on-surface font-label-caps text-label-caps px-10 py-5 border-[3px] border-on-surface brutalist-shadow transition-all duration-200 brutalist-active uppercase text-lg text-center" href="/">
+<a class="bg-surface text-on-surface font-label-caps text-label-caps px-6 sm:px-10 py-4 sm:py-5 border-[3px] border-on-surface brutalist-shadow transition-all duration-200 brutalist-active uppercase text-base sm:text-lg text-center max-w-full" href="/">
                     View Frameworks
                 </a>
 </div>

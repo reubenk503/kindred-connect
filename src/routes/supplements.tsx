@@ -25,7 +25,7 @@ const HTML = `<!-- TopNavBar -->
                     </a>
 </div>
 </div>
-<div class="md:col-span-5 relative h-96 md:h-[500px]">
+<div class="md:col-span-5 relative h-72 sm:h-96 md:h-[460px]">
 <div class="absolute inset-0 border-[3px] border-on-surface bg-secondary-fixed overflow-hidden brutalist-shadow">
 <img alt="Supplements packaging mockup" class="w-full h-full object-cover grayscale mix-blend-multiply opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdAseSVG8Nj5lpVZA_-2Pv0rM4ye0LrC6-YV6ernHHn66Lpe0YKqdppQuDXTG2Gfwh5aya5YwmB3Gvd3b9NRDeS-JreHkECkjhGYdv91T7r3VAH7y6li_v36a3UobFiAKdW9Plr_gVfjNL5lb2uyb3tZ5x88Tyqk4jW1BeNixIFfSEYQicWm5b-SVzVeEbpr0TR-wbTq9jUWzQpPH6rpeUHRFu1pJstWpMI-dXRUlHTsGDT-hSYlChuFzcNfZZKuzh4-BsHgT2ILEC"/>
 </div>
@@ -147,7 +147,7 @@ const HTML = `<!-- TopNavBar -->
 <!-- FAQ Section -->
 <section class="px-grid-margin py-stack-xl grid grid-cols-1 md:grid-cols-12 gap-grid-gutter">
 <div class="md:col-span-4">
-<h2 class="font-headline-sm md:font-headline-md text-headline-sm md:text-headline-md mb-stack-md leading-tight whitespace-nowrap">Clarifications.</h2>
+<h2 class="font-headline-sm md:font-headline-md text-headline-sm md:text-headline-md mb-stack-md leading-tight">Clarifications.</h2>
 <p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">Common points of friction in the supplement regulatory journey.</p>
 <div class="bg-surface-container-highest p-stack-md border-[3px] border-on-surface brutalist-shadow">
 <p class="font-ui-mono text-ui-mono">Last Updated: October 2024</p>
@@ -190,7 +190,7 @@ const HTML = `<!-- TopNavBar -->
 <div>
 <h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-stack-md leading-tight">Ready for <span class="text-primary-fixed italic">Approval?</span></h2>
 <p class="font-body-lg text-body-lg mb-stack-xl opacity-80">Stop guessing. Get a definitive regulatory roadmap for your supplement brand.</p>
-<a class="bg-primary-container text-on-primary-container px-10 py-5 border-[3px] border-on-surface font-label-caps text-label-caps brutalist-shadow brutalist-button-hover transition-transform duration-200 inline-flex items-center gap-3" href="/contact">
+<a class="bg-primary-container text-on-primary-container px-6 sm:px-10 py-4 sm:py-5 border-[3px] border-on-surface font-label-caps text-label-caps brutalist-shadow brutalist-button-hover transition-transform duration-200 inline-flex items-center gap-3 max-w-full" href="/contact">
                             BOOK STRATEGY CALL <span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
 </a>
 </div>

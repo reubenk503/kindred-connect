@@ -15,13 +15,13 @@ const HTML = `<!-- TopNavBar -->
                     Navigating the UK and EU cosmetic regulatory landscape requires more than just checking boxes. It demands a precision-first approach to safety, labeling, and responsible person services.
                 </p>
 <div class="flex flex-wrap gap-grid-gutter">
-<button class="bg-primary-container text-on-primary-fixed font-label-caps text-label-caps px-8 py-5 border-[3px] border-on-surface brutalist-shadow-hover brutalist-shadow-active transition-all rounded-full uppercase flex items-center gap-2" onclick="window.location.href='/contact'">
+<button class="bg-primary-container text-on-primary-fixed font-label-caps text-label-caps px-6 sm:px-8 py-4 sm:py-5 border-[3px] border-on-surface brutalist-shadow-hover brutalist-shadow-active transition-all rounded-full uppercase flex items-center gap-2 max-w-full text-left" onclick="window.location.href='/contact'">
                         Book Consultation
                         <span class="material-symbols-outlined">arrow_forward</span>
 </button>
 </div>
 </div>
-<div class="md:col-span-5 relative bg-surface-container-highest min-h-[400px]">
+<div class="md:col-span-5 relative bg-surface-container-highest min-h-[300px] md:min-h-[400px]">
 <img class="w-full h-full object-cover" data-alt="A striking high-fashion editorial photograph of a minimalist cosmetic product bottle sitting on a polished concrete surface. The lighting is dramatic and high-contrast, featuring sharp shadows and a clean, modern aesthetic. The color palette consists of neutral creams and deep charcoals, with a single electric teal neon glow reflecting off the glass. The composition is asymmetrical and bold, reflecting a neo-brutalist design sensibility." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF54F7cAInb-jDL_qY82qS7YLnZwxky66xmb1NrZAsY-TFGWWoaLZ-NTIAU6__qRZ5Rr8kLNv4uGGAhhGv-ZH-1twGsaj0yjE-RXdWfOVyQyc_I5fBqTG46VSxwMOy6Fg9Oa5LgQE-hJqDvmJmf-RglR08rbL7bQJGM5sGLvm7b6T87PyLELaEhWSO6wmcoDo5JaQJ7GKmKEmpenMBEti11HzElzgKDQ6MaJSuTJUk0DXuxBArO13pfF5_pcIIydVUQejXaDdUS6mj"/>
 </div>
 </section>
@@ -125,7 +125,7 @@ const HTML = `<!-- TopNavBar -->
 <p class="font-body-lg text-body-lg mb-stack-xl max-w-2xl opacity-80">
                     Join hundreds of successful brands that trust Agota Csaszar for seamless market entry. Our experts are ready to audit your portfolio.
                 </p>
-<button class="bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps px-12 py-6 border-[3px] border-surface brutalist-shadow-hover transition-all rounded-full uppercase text-xl" onclick="window.location.href='/contact'">
+<button class="bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps px-6 sm:px-12 py-4 sm:py-6 border-[3px] border-surface brutalist-shadow-hover transition-all rounded-full uppercase text-base sm:text-xl max-w-full" onclick="window.location.href='/contact'">
                     Secure Your Consultation
                 </button>
 </div>

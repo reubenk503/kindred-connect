@@ -12,14 +12,14 @@ const NAV_ITEMS: { to: string; label: string }[] = [
 export function SiteNav() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   return (
-    <nav className="w-full sticky top-0 z-50 bg-surface border-b-[3px] border-on-surface flex justify-between items-center px-grid-margin py-stack-md">
+    <nav className="w-full sticky top-0 z-50 bg-surface border-b-[3px] border-on-surface flex flex-wrap justify-between items-center gap-3 px-grid-margin py-stack-md">
       <Link
         to="/"
-        className="font-headline-lg text-[20px] lg:text-headline-lg uppercase tracking-tighter text-on-surface font-black hover:text-primary transition-colors"
+        className="font-headline-lg text-[18px] sm:text-[20px] xl:text-headline-lg uppercase tracking-normal text-on-surface font-black hover:text-primary transition-colors leading-none"
       >
         Agota Csaszar
       </Link>
-      <div className="hidden md:flex gap-grid-gutter items-center">
+      <div className="hidden xl:flex gap-5 items-center">
         {NAV_ITEMS.map((item) => {
           const active = item.to === "/" ? pathname === "/" : pathname.startsWith(item.to);
           return (
@@ -40,7 +40,7 @@ export function SiteNav() {
       </div>
       <Link
         to="/contact"
-        className="bg-primary-container text-on-primary-fixed font-label-caps text-label-caps px-stack-lg py-stack-sm border-[3px] border-on-surface brutalist-shadow brutalist-active uppercase text-center"
+        className="bg-primary-container text-on-primary-fixed font-label-caps text-label-caps px-4 sm:px-stack-lg py-stack-sm border-[3px] border-on-surface brutalist-shadow brutalist-active uppercase text-center max-w-[48vw] sm:max-w-none leading-tight"
       >
         Get Started
       </Link>

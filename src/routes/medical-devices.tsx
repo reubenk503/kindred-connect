@@ -13,13 +13,13 @@ const HTML = `<!-- TopNavBar -->
                     Navigating the shift from MDD to MDR and the implementation of UKCA. We provide surgical precision in regulatory strategy, technical documentation, and quality management systems for innovators.
                 </p>
 <div class="mt-stack-xl flex flex-wrap gap-stack-md">
-<a class="bg-primary-container text-on-primary-container px-8 py-4 border-[3px] border-on-surface font-label-caps text-lg rounded-full brutalist-shadow brutalist-active inline-block" href="/contact">BOOK CONSULTATION</a>
-<button class="bg-surface text-on-surface px-8 py-4 border-[3px] border-on-surface font-label-caps text-lg rounded-full brutalist-shadow brutalist-active">DOWNLOAD GUIDE</button>
+<a class="bg-primary-container text-on-primary-container px-6 sm:px-8 py-3 sm:py-4 border-[3px] border-on-surface font-label-caps text-base sm:text-lg rounded-full brutalist-shadow brutalist-active inline-block max-w-full text-center" href="/contact">BOOK CONSULTATION</a>
+<button class="bg-surface text-on-surface px-6 sm:px-8 py-3 sm:py-4 border-[3px] border-on-surface font-label-caps text-base sm:text-lg rounded-full brutalist-shadow brutalist-active max-w-full">DOWNLOAD GUIDE</button>
 </div>
 </div>
-<div class="md:col-span-4 relative h-[400px] md:h-auto">
+<div class="md:col-span-4 relative h-[300px] sm:h-[400px] md:h-auto overflow-hidden md:overflow-visible">
 <div class="absolute inset-0 border-[3px] border-on-surface bg-secondary-container z-0"></div>
-<img class="absolute -top-4 -left-4 w-full h-full object-cover border-[3px] border-on-surface z-10" data-alt="A professional medical device prototype, possibly a high-tech robotic surgical tool or a sleek diagnostic scanner, shot in a high-contrast editorial style. The lighting is crisp, emphasizing metallic textures and smooth white surfaces. The background is a clean, minimalist laboratory setting with teal and charcoal color accents. The aesthetic is ultra-modern and clinical yet visually striking, reflecting regulatory precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSKWrVSmslHwMG4awUINAHVU_-PoYWy_nnahdJ8qlEKM7trPLlzwo3lpLJBuK5JXydk6lmTMwOHU9pU14GJEMfWfWaP4OWWYji3AnlWjvMVB7oaHPE5VgAH31qYJXxjgaxPb_58qdN1VyaAWjrVNAjEruX8FPB6CJAUqQGEBj0Y2C87bqsYMufu1ML1dCqQ6AkObnafgwAIs0bBDBKiexRhU19AAOmE34H62CnLvOzOjtgraX5yAQjtlTysNzCeB5f6FuHr3XxHSfg"/>
+<img class="absolute md:-top-4 md:-left-4 inset-0 md:inset-auto w-full h-full object-cover border-[3px] border-on-surface z-10" data-alt="A professional medical device prototype, possibly a high-tech robotic surgical tool or a sleek diagnostic scanner, shot in a high-contrast editorial style. The lighting is crisp, emphasizing metallic textures and smooth white surfaces. The background is a clean, minimalist laboratory setting with teal and charcoal color accents. The aesthetic is ultra-modern and clinical yet visually striking, reflecting regulatory precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSKWrVSmslHwMG4awUINAHVU_-PoYWy_nnahdJ8qlEKM7trPLlzwo3lpLJBuK5JXydk6lmTMwOHU9pU14GJEMfWfWaP4OWWYji3AnlWjvMVB7oaHPE5VgAH31qYJXxjgaxPb_58qdN1VyaAWjrVNAjEruX8FPB6CJAUqQGEBj0Y2C87bqsYMufu1ML1dCqQ6AkObnafgwAIs0bBDBKiexRhU19AAOmE34H62CnLvOzOjtgraX5yAQjtlTysNzCeB5f6FuHr3XxHSfg"/>
 </div>
 </section>
 <!-- Classification Grid -->
@@ -144,7 +144,7 @@ const HTML = `<!-- TopNavBar -->
 <h2 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl uppercase mb-stack-lg">Ready for the <span class="text-primary-fixed">Audit?</span></h2>
 <p class="font-body-lg text-body-lg mb-stack-xl opacity-80">Don't let regulatory hurdles stall your innovation. Get a comprehensive compliance roadmap today.</p>
 <div class="inline-block brutalist-shadow">
-<a class="bg-secondary-container text-on-surface px-12 py-6 border-[3px] border-surface font-headline-lg text-2xl uppercase hover:bg-primary-container transition-colors inline-block" href="/contact">
+<a class="bg-secondary-container text-on-surface px-6 sm:px-12 py-4 sm:py-6 border-[3px] border-surface font-headline-lg text-xl sm:text-2xl uppercase hover:bg-primary-container transition-colors inline-block max-w-full" href="/contact">
                         Book Your Consultation
                     </a>
 </div>
