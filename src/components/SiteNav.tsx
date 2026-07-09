@@ -19,7 +19,7 @@ export function SiteNav() {
       >
         Agota Csaszar
       </Link>
-      <div className="hidden xl:flex gap-5 items-center">
+      <div className="order-3 flex w-full gap-x-4 gap-y-2 overflow-x-auto pb-1 md:flex-wrap md:justify-center xl:order-none xl:w-auto xl:flex-nowrap xl:justify-start xl:overflow-visible xl:pb-0">
         {NAV_ITEMS.map((item) => {
           const active = item.to === "/" ? pathname === "/" : pathname.startsWith(item.to);
           return (
@@ -27,7 +27,7 @@ export function SiteNav() {
               key={item.to}
               to={item.to}
               className={
-                "font-label-caps text-label-caps transition-colors duration-200 " +
+                "font-label-caps text-label-caps shrink-0 transition-colors duration-200 " +
                 (active
                   ? "text-primary border-b-[3px] border-primary pb-1"
                   : "text-on-surface hover:text-primary")
