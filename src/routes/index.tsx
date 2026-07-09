@@ -191,7 +191,7 @@ const HTML = `<!-- Top Navigation Bar -->
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-grid-gutter">
 <!-- Case 1 -->
 <a class="border-[3px] border-on-surface p-0 flex flex-col md:flex-row brutalist-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform" href="/case-studies">
-<div class="md:w-1/3 border-b-[3px] md:border-b-0 md:border-r-[3px] border-on-surface min-h-[200px]">
+<div class="md:w-1/3 border-b-[3px] md:border-b-0 md:border-r-[3px] border-on-surface h-[200px] md:h-auto">
 <img class="w-full h-full object-cover" data-alt="Close up high-end medical packaging aesthetic, minimalist white box with sophisticated typography and clinical graphics. Soft medical blue lighting, professional pharmaceutical photography style, 8k resolution, clean and sterile look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqXleZANWLhGi2Jq5Wx9TMJqVyyDQRLIQpP0B1ydj6EC65gLfJ1DguQ3XVDTk93aiQEjksFRQYgYNLBDcTVpWQCSocLHOsMfhRemHWFDBfL9vFdo6mIcIkH9q2fY19HRLNhN9qtyJCfzEpatnXG8eExLJcxjhNnsEH0JRFkhIPcuV28_RnNpA0FfVxGcbSh0om1fWY1J71XLInV1wGKzjTkdG85cE6qLeAHahWebRPZCbrQq0MbGTKRJPhp8adTxdftOQY3FCqUeZ2"/>
 </div>
 <div class="md:w-2/3 p-stack-lg bg-surface">
@@ -203,7 +203,7 @@ const HTML = `<!-- Top Navigation Bar -->
 </a>
 <!-- Case 2 -->
 <a class="border-[3px] border-on-surface p-0 flex flex-col md:flex-row brutalist-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform" href="/case-studies">
-<div class="md:w-1/3 border-b-[3px] md:border-b-0 md:border-r-[3px] border-on-surface min-h-[200px]">
+<div class="md:w-1/3 border-b-[3px] md:border-b-0 md:border-r-[3px] border-on-surface h-[200px] md:h-auto">
 <img class="w-full h-full object-cover" data-alt="Macro photography of luxury skincare cream texture with professional product lighting. Aesthetic of high-end cosmetics, neutral background, sharp focus, 3px charcoal border style, neo-brutalist editorial layout, dramatic highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyjGeArnf2JZtZnczMgXQQLsK27LZ7ADgnn9AwbSeOACxBx8w2_veveyhyq1YHPAErpl3cT2NKuItd0a_KFjQ5ITzKeTZoABK93ktqn1r9ThjoiNu_qv8cODuKa8l8BpYUEp4WnciomhIka2GSDhy7SjkVu0h4Cl5f0uoxVkqHknakRN0tDWhWVeoRvWOXkea__7-bjHxkkBnIpwOgMda2aDmpjj4Rb4ITC0Aj23fhNBv4h0jUIen-vOf9IaAGLMos6UXeJA-rIefO"/>
 </div>
 <div class="md:w-2/3 p-stack-lg bg-surface">

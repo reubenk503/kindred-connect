@@ -21,7 +21,7 @@ const HTML = `<!-- TopNavBar -->
 </button>
 </div>
 </div>
-<div class="md:col-span-5 relative bg-surface-container-highest min-h-[300px] md:min-h-[400px]">
+<div class="md:col-span-5 relative bg-surface-container-highest h-[300px] md:h-[400px]">
 <img class="w-full h-full object-cover" data-alt="A striking high-fashion editorial photograph of a minimalist cosmetic product bottle sitting on a polished concrete surface. The lighting is dramatic and high-contrast, featuring sharp shadows and a clean, modern aesthetic. The color palette consists of neutral creams and deep charcoals, with a single electric teal neon glow reflecting off the glass. The composition is asymmetrical and bold, reflecting a neo-brutalist design sensibility." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF54F7cAInb-jDL_qY82qS7YLnZwxky66xmb1NrZAsY-TFGWWoaLZ-NTIAU6__qRZ5Rr8kLNv4uGGAhhGv-ZH-1twGsaj0yjE-RXdWfOVyQyc_I5fBqTG46VSxwMOy6Fg9Oa5LgQE-hJqDvmJmf-RglR08rbL7bQJGM5sGLvm7b6T87PyLELaEhWSO6wmcoDo5JaQJ7GKmKEmpenMBEti11HzElzgKDQ6MaJSuTJUk0DXuxBArO13pfF5_pcIIydVUQejXaDdUS6mj"/>
 </div>
 </section>
