@@ -17,7 +17,7 @@ import { SiteFooter } from "../components/SiteFooter";
 const BRUTALIST_CSS = `
 .brutalist-shadow { box-shadow: 5px 5px 0px 0px #151d1b; }
 .brutalist-shadow-hover:hover { transform: translate(-3px, -3px); box-shadow: 8px 8px 0px 0px #151d1b; }
-.brutalist-active:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0px 0px #151d1b; }
+.brutalist-active:active, .brutalist-shadow-active:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0px 0px #151d1b; }
 .brutalist-button-hover:hover { transform: translate(-3px, -3px); }
 .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; font-family: 'Material Symbols Outlined'; }
 .active-tab { background-color: #01fede; color: #00201b; box-shadow: 2px 2px 0px 0px #151d1b; transform: translate(2px, 2px); }
