@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
+import { initRevealAnimations } from "../lib/animations";
 
 const HTML = `<!-- TopNavBar -->
 
@@ -8,7 +9,7 @@ const HTML = `<!-- TopNavBar -->
 <section class="px-grid-margin py-stack-xl border-b-[3px] border-on-surface">
 <div class="grid grid-cols-1 md:grid-cols-12 gap-grid-gutter items-end">
 <div class="md:col-span-8">
-<h1 class="font-display-xl text-display-xl-mobile md:text-display-xl uppercase mb-stack-md">
+<h1 class="reveal font-display-xl text-display-xl-mobile md:text-display-xl uppercase mb-stack-md">
                         The Architect of <span class="text-primary italic">Compliance</span>
 </h1>
 <p class="font-subheading text-subheading max-w-2xl text-on-surface-variant">
@@ -16,7 +17,7 @@ const HTML = `<!-- TopNavBar -->
                     </p>
 </div>
 <div class="md:col-span-4 flex justify-end">
-<div class="w-full aspect-square border-[3px] border-on-surface brutalist-shadow bg-surface-container-highest relative overflow-hidden group">
+<div class="frame-hover reveal w-full aspect-square border-[3px] border-on-surface brutalist-shadow bg-surface-container-highest relative overflow-hidden group">
 </div>
 </div>
 </div>
@@ -26,7 +27,7 @@ const HTML = `<!-- TopNavBar -->
 <div class="grid grid-cols-1 md:grid-cols-12 gap-grid-gutter relative z-10">
 <div class="md:col-span-5 border-r-[3px] border-on-surface pr-grid-gutter">
 <span class="bg-secondary-container text-on-secondary-container font-label-caps px-2 py-1 mb-stack-md inline-block">MISSION STATEMENT</span>
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-stack-lg leading-none">
+<h2 class="reveal font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-stack-lg leading-none">
                         Precision. <br/>Provocation. <br/>Protection.
                     </h2>
 <p class="font-body-lg text-body-lg text-on-surface mb-stack-md">
@@ -40,12 +41,12 @@ const HTML = `<!-- TopNavBar -->
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-grid-gutter">
 <div class="p-stack-md border-[3px] border-on-surface bg-white brutalist-shadow">
 <span class="material-symbols-outlined text-4xl text-primary mb-stack-sm">architecture</span>
-<h3 class="font-subheading text-subheading mb-stack-xs uppercase">Structural Integrity</h3>
+<h3 class="reveal font-subheading text-subheading mb-stack-xs uppercase">Structural Integrity</h3>
 <p class="font-body-md text-body-md">We build compliance from the ground up, ensuring every policy is anchored in operational reality.</p>
 </div>
 <div class="p-stack-md border-[3px] border-on-surface bg-primary-container brutalist-shadow">
 <span class="material-symbols-outlined text-4xl text-on-primary-container mb-stack-sm">radar</span>
-<h3 class="font-subheading text-subheading mb-stack-xs uppercase">Future Forecasting</h3>
+<h3 class="reveal font-subheading text-subheading mb-stack-xs uppercase">Future Forecasting</h3>
 <p class="font-body-md text-body-md">We don't just solve today's mandates; we anticipate the legislative shifts of tomorrow.</p>
 </div>
 </div>
@@ -60,7 +61,7 @@ const HTML = `<!-- TopNavBar -->
 </section>
 <!-- Comparison Table: Firm Positioning -->
 <section class="px-grid-margin py-stack-xl">
-<h2 class="font-display-xl text-display-xl-mobile md:text-display-xl text-center mb-stack-xl uppercase">Why we <span class="text-secondary italic">Outperform</span></h2>
+<h2 class="reveal font-display-xl text-display-xl-mobile md:text-display-xl text-center mb-stack-xl uppercase">Why we <span class="text-secondary italic">Outperform</span></h2>
 <div class="overflow-x-auto">
 <table class="w-full border-[3px] border-on-surface text-left">
 <thead>
@@ -100,7 +101,7 @@ const HTML = `<!-- TopNavBar -->
 <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-stack-xl">
 <div>
 <span class="text-primary-fixed font-label-caps tracking-widest uppercase">The Pedigree</span>
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">Unmatched Credentials</h2>
+<h2 class="reveal font-headline-lg text-headline-lg-mobile md:text-headline-lg">Unmatched Credentials</h2>
 </div>
 <button class="mt-stack-md md:mt-0 px-8 py-3 border-[3px] border-primary-fixed text-primary-fixed font-label-caps uppercase hover:bg-primary-fixed hover:text-on-primary-fixed transition-all">
                     Download Full CV
@@ -109,24 +110,24 @@ const HTML = `<!-- TopNavBar -->
 <div class="grid grid-cols-1 md:grid-cols-3 gap-grid-gutter">
 <div class="border-[3px] border-outline-variant p-stack-lg group hover:border-primary-fixed transition-colors">
 <div class="font-display-xl opacity-20 group-hover:opacity-100 transition-opacity mb-stack-sm leading-none">20+</div>
-<h3 class="font-subheading text-subheading mb-stack-xs uppercase">Years Experience</h3>
+<h3 class="reveal font-subheading text-subheading mb-stack-xs uppercase">Years Experience</h3>
 <p class="font-body-md text-surface-variant">Leading complex regulatory transformations for Fortune 500 enterprises across EMEA and North America.</p>
 </div>
 <div class="border-[3px] border-outline-variant p-stack-lg group hover:border-primary-fixed transition-colors">
 <span class="material-symbols-outlined text-5xl text-primary-fixed mb-stack-sm" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
-<h3 class="font-subheading text-subheading mb-stack-xs uppercase">Global Certifications</h3>
+<h3 class="reveal font-subheading text-subheading mb-stack-xs uppercase">Global Certifications</h3>
 <p class="font-body-md text-surface-variant">Dual-certified Lead Auditor for ISO 27001 &amp; 9001, plus specialized AML and GDPR designations.</p>
 </div>
 <div class="border-[3px] border-outline-variant p-stack-lg group hover:border-primary-fixed transition-colors">
 <span class="material-symbols-outlined text-5xl text-primary-fixed mb-stack-sm">history_edu</span>
-<h3 class="font-subheading text-subheading mb-stack-xs uppercase">Industry Thought Leader</h3>
+<h3 class="reveal font-subheading text-subheading mb-stack-xs uppercase">Industry Thought Leader</h3>
 <p class="font-body-md text-surface-variant">Frequent keynote speaker at Global Regulatory summits and author of the "Responsive Compliance" framework.</p>
 </div>
 </div>
 </section>
 <!-- CTA Section -->
 <section class="px-grid-margin py-stack-xl flex flex-col items-center text-center">
-<h2 class="font-display-xl text-display-xl-mobile md:text-display-xl uppercase mb-stack-lg">Ready for <span class="text-primary">Precision?</span></h2>
+<h2 class="reveal font-display-xl text-display-xl-mobile md:text-display-xl uppercase mb-stack-lg">Ready for <span class="text-primary">Precision?</span></h2>
 <div class="flex flex-col sm:flex-row gap-stack-md">
 <a class="px-6 sm:px-12 py-4 bg-primary text-white border-[3px] border-on-surface brutalist-shadow brutalist-shadow-hover active:translate-y-1 transition-all font-label-caps text-base sm:text-lg uppercase inline-block text-center" href="/contact">
                     Book a Consultation
@@ -165,8 +166,8 @@ export const Route = createFileRoute("/about")({
 
 function Page() {
   useEffect(() => {
-    // @ts-expect-error - tailwind cdn
-    if (window.tailwind?.config) return;
+    const cleanup = initRevealAnimations();
+    return cleanup;
   }, []);
   return <div className="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container" dangerouslySetInnerHTML={{ __html: HTML }} />;
 }

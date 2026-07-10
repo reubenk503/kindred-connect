@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
+import { initRevealAnimations } from "../lib/animations";
 
 const HTML = `<!-- TopNavBar -->
 
@@ -8,7 +9,7 @@ const HTML = `<!-- TopNavBar -->
 <section class="grid grid-cols-1 md:grid-cols-12 w-full border-b-[3px] border-on-surface">
 <div class="md:col-span-7 p-grid-margin flex flex-col justify-center custom-grid-rule">
 <span class="font-label-caps text-label-caps text-secondary uppercase mb-stack-md tracking-widest">Global Standards</span>
-<h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-on-surface mb-stack-lg leading-none">
+<h1 class="reveal font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-on-surface mb-stack-lg leading-none">
                     COSMETICS <br/> COMPLIANCE <br/> <span class="text-primary italic">REDEFINED.</span>
 </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-stack-xl">
@@ -21,13 +22,13 @@ const HTML = `<!-- TopNavBar -->
 </button>
 </div>
 </div>
-<div class="md:col-span-5 relative bg-surface-container-highest h-[300px] md:h-[400px]">
+<div class="frame-hover reveal md:col-span-5 relative bg-surface-container-highest h-[300px] md:h-[400px]">
 </div>
 </section>
 <!-- Regulation Overview: Bento Grid -->
 <section class="py-stack-xl px-grid-margin border-b-[3px] border-on-surface">
 <div class="mb-stack-xl">
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-stack-sm uppercase">Regulatory Overviews</h2>
+<h2 class="reveal font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-stack-sm uppercase">Regulatory Overviews</h2>
 <div class="w-24 h-[6px] bg-primary-fixed border-[1px] border-on-surface"></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-4 gap-grid-gutter">
@@ -35,7 +36,7 @@ const HTML = `<!-- TopNavBar -->
 <div class="md:col-span-2 border-[3px] border-on-surface p-stack-lg bg-surface brutalist-shadow">
 <div class="flex items-center gap-4 mb-stack-md">
 <span class="material-symbols-outlined text-4xl text-primary">gavel</span>
-<h3 class="font-subheading text-subheading uppercase">UK/EU Regulation 1223/2009</h3>
+<h3 class="reveal font-subheading text-subheading uppercase">UK/EU Regulation 1223/2009</h3>
 </div>
 <p class="font-body-md text-body-md mb-stack-md">The gold standard for cosmetic safety. All products placed on the market must have a designated 'Responsible Person' (RP) and a comprehensive Product Information File (PIF).</p>
 <ul class="space-y-2 border-t-[3px] border-on-surface pt-stack-md">
@@ -48,7 +49,7 @@ const HTML = `<!-- TopNavBar -->
 <div class="md:col-span-2 border-[3px] border-on-surface p-stack-lg bg-primary-fixed brutalist-shadow">
 <div class="flex items-center gap-4 mb-stack-md">
 <span class="material-symbols-outlined text-4xl text-on-primary-fixed">science</span>
-<h3 class="font-subheading text-subheading uppercase">CPSR Requirements</h3>
+<h3 class="reveal font-subheading text-subheading uppercase">CPSR Requirements</h3>
 </div>
 <p class="font-body-md text-body-md mb-stack-md text-on-primary-fixed">The Cosmetic Product Safety Report is a mandatory document split into two parts: Part A (Safety Info) and Part B (Safety Assessment by a qualified professional).</p>
 <div class="grid grid-cols-2 gap-stack-sm">
@@ -62,7 +63,7 @@ const HTML = `<!-- TopNavBar -->
 </section>
 <!-- Process Breakdown -->
 <section class="py-stack-xl px-grid-margin bg-surface-container">
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-stack-xl uppercase text-center">Our Compliance Pipeline</h2>
+<h2 class="reveal font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-stack-xl uppercase text-center">Our Compliance Pipeline</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border-[3px] border-on-surface">
 <!-- Step 1 -->
 <div class="p-stack-xl border-b-[3px] md:border-b-0 md:border-r-[3px] border-on-surface group hover:bg-primary-fixed transition-colors duration-300">
@@ -86,7 +87,7 @@ const HTML = `<!-- TopNavBar -->
 </section>
 <!-- FAQ Section -->
 <section class="py-stack-xl px-grid-margin max-w-5xl mx-auto">
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-stack-xl uppercase border-l-[12px] border-secondary pl-stack-md">Frequency Asked</h2>
+<h2 class="reveal font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-stack-xl uppercase border-l-[12px] border-secondary pl-stack-md">Frequency Asked</h2>
 <div class="space-y-stack-md">
 <details class="group border-[3px] border-on-surface bg-surface open:bg-surface-container-low transition-all">
 <summary class="flex justify-between items-center p-stack-lg cursor-pointer list-none">
@@ -120,7 +121,7 @@ const HTML = `<!-- TopNavBar -->
 <!-- Final CTA -->
 <section class="py-stack-xl px-grid-margin bg-on-surface text-surface overflow-hidden relative">
 <div class="relative z-10 text-center flex flex-col items-center">
-<h2 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl mb-stack-lg uppercase leading-none">Ready for <br/> <span class="text-primary-fixed">Compliance?</span></h2>
+<h2 class="reveal font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl mb-stack-lg uppercase leading-none">Ready for <br/> <span class="text-primary-fixed">Compliance?</span></h2>
 <p class="font-body-lg text-body-lg mb-stack-xl max-w-2xl opacity-80">
                     Join hundreds of successful brands that trust Agota Csaszar for seamless market entry. Our experts are ready to audit your portfolio.
                 </p>
@@ -169,8 +170,8 @@ export const Route = createFileRoute("/cosmetics")({
 
 function Page() {
   useEffect(() => {
-    // @ts-expect-error - tailwind cdn
-    if (window.tailwind?.config) return;
+    const cleanup = initRevealAnimations();
+    return cleanup;
   }, []);
   return <div className="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed" dangerouslySetInnerHTML={{ __html: HTML }} />;
 }

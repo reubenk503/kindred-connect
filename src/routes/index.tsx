@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
+import { initRevealAnimations } from "../lib/animations";
 
 const HTML = `<!-- Top Navigation Bar -->
 
@@ -7,7 +8,7 @@ const HTML = `<!-- Top Navigation Bar -->
 <header class="relative px-grid-margin py-stack-xl lg:py-32 grid grid-cols-1 lg:grid-cols-12 gap-grid-gutter overflow-hidden">
 <div class="lg:col-span-8 flex flex-col justify-center z-10">
 <span class="font-label-caps text-label-caps text-secondary uppercase mb-stack-md block">Regulatory Excellence</span>
-<h1 class="font-display-xl-mobile lg:font-display-xl text-display-xl-mobile lg:text-display-xl text-on-surface mb-stack-lg leading-none">
+<h1 class="reveal font-display-xl-mobile lg:font-display-xl text-display-xl-mobile lg:text-display-xl text-on-surface mb-stack-lg leading-none">
                 PRECISION COMPLIANCE FOR <span class="text-primary italic">SUPPLEMENTS</span>, COSMETICS, AND MEDICAL DEVICES.
             </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-stack-xl">
@@ -25,7 +26,7 @@ const HTML = `<!-- Top Navigation Bar -->
 <div class="lg:col-span-4 relative hidden lg:flex items-center justify-center">
 <!-- Asymmetric visual element -->
 <div class="absolute w-full h-[120%] border-[3px] border-on-surface rotate-3 translate-x-12 translate-y-8 bg-secondary-container/10 -z-10"></div>
-<div class="w-full aspect-[3/4] border-[3px] border-on-surface bg-surface-container relative z-10 overflow-hidden brutalist-shadow">
+<div class="frame-hover reveal w-full aspect-[3/4] border-[3px] border-on-surface bg-surface-container relative z-10 overflow-hidden brutalist-shadow">
 <div class="absolute bottom-0 left-0 bg-primary-container p-stack-md border-t-[3px] border-r-[3px] border-on-surface">
 <span class="font-label-caps text-label-caps text-on-primary-fixed uppercase">EST. 2014</span>
 </div>
@@ -36,7 +37,7 @@ const HTML = `<!-- Top Navigation Bar -->
 <section class="px-grid-margin py-stack-xl bg-surface-container-low border-t-[3px] border-on-surface">
 <div class="flex flex-col lg:flex-row justify-between items-end mb-stack-xl gap-stack-lg">
 <div class="max-w-2xl">
-<h2 class="font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface mb-stack-md uppercase">Core Disciplines</h2>
+<h2 class="reveal font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface mb-stack-md uppercase">Core Disciplines</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant">Three pillars of expertise, reinforced by global standards and local regulatory precision.</p>
 </div>
 <div class="font-ui-mono text-ui-mono text-secondary uppercase bg-surface px-stack-md py-stack-xs border-[3px] border-on-surface">
@@ -48,7 +49,7 @@ const HTML = `<!-- Top Navigation Bar -->
 <a class="bg-surface border-[3px] border-on-surface p-stack-xl flex flex-col h-full hover:bg-primary-container transition-colors duration-300 group" href="/supplements">
 <div class="mb-stack-xl">
 <span class="material-symbols-outlined text-5xl mb-stack-md text-on-surface" data-icon="pill">pill</span>
-<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-stack-sm uppercase">Supplements</h3>
+<h3 class="reveal font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-stack-sm uppercase">Supplements</h3>
 <div class="flex flex-wrap gap-2 mb-stack-md">
 <span class="bg-on-surface text-surface text-[10px] px-2 py-1 uppercase font-bold">FSA</span>
 <span class="bg-on-surface text-surface text-[10px] px-2 py-1 uppercase font-bold">EFSA</span>
@@ -67,7 +68,7 @@ const HTML = `<!-- Top Navigation Bar -->
 <a class="bg-surface border-[3px] border-on-surface p-stack-xl flex flex-col h-full hover:bg-secondary-container transition-colors duration-300 group" href="/cosmetics">
 <div class="mb-stack-xl">
 <span class="material-symbols-outlined text-5xl mb-stack-md text-on-surface" data-icon="brush">brush</span>
-<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-stack-sm uppercase">Cosmetics</h3>
+<h3 class="reveal font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-stack-sm uppercase">Cosmetics</h3>
 <div class="flex flex-wrap gap-2 mb-stack-md">
 <span class="bg-on-surface text-surface text-[10px] px-2 py-1 uppercase font-bold">CPSR</span>
 <span class="bg-on-surface text-surface text-[10px] px-2 py-1 uppercase font-bold">PIF</span>
@@ -86,7 +87,7 @@ const HTML = `<!-- Top Navigation Bar -->
 <a class="bg-surface border-[3px] border-on-surface p-stack-xl flex flex-col h-full hover:bg-tertiary-container transition-colors duration-300 group" href="/medical-devices">
 <div class="mb-stack-xl">
 <span class="material-symbols-outlined text-5xl mb-stack-md text-on-surface" data-icon="medical_services">medical_services</span>
-<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-stack-sm uppercase">Med Devices</h3>
+<h3 class="reveal font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-stack-sm uppercase">Med Devices</h3>
 <div class="flex flex-wrap gap-2 mb-stack-md">
 <span class="bg-on-surface text-surface text-[10px] px-2 py-1 uppercase font-bold">MDR</span>
 <span class="bg-on-surface text-surface text-[10px] px-2 py-1 uppercase font-bold">UKCA</span>
@@ -106,7 +107,7 @@ const HTML = `<!-- Top Navigation Bar -->
 <!-- Process Section: Pathway Visualization -->
 <section class="px-grid-margin py-stack-xl bg-surface">
 <div class="max-w-4xl mb-stack-xl">
-<h2 class="font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface mb-stack-md uppercase">The Pathway to Approval</h2>
+<h2 class="reveal font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface mb-stack-md uppercase">The Pathway to Approval</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant">A streamlined, risk-averse methodology for global compliance.</p>
 </div>
 <div class="relative grid grid-cols-1 md:grid-cols-4 border-t-[3px] border-on-surface">
@@ -143,7 +144,7 @@ const HTML = `<!-- Top Navigation Bar -->
 <!-- Credibility Section -->
 <section class="grid grid-cols-1 lg:grid-cols-12 border-y-[3px] border-on-surface bg-on-background text-surface">
 <div class="lg:col-span-5 p-grid-margin border-b-[3px] lg:border-b-0 lg:border-r-[3px] border-on-surface flex flex-col justify-center">
-<h2 class="font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg mb-stack-lg uppercase leading-none">Unrivaled <br/>Pedigree</h2>
+<h2 class="reveal font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg mb-stack-lg uppercase leading-none">Unrivaled <br/>Pedigree</h2>
 <p class="font-body-lg text-body-lg text-surface-dim mb-stack-xl">With over a decade of navigating the world's strictest regulatory bodies, our track record is 100% submission success rate for verified files.</p>
 <div class="flex gap-grid-gutter">
 <div class="flex flex-col">
@@ -186,11 +187,11 @@ const HTML = `<!-- Top Navigation Bar -->
 </section>
 <!-- Case Studies Section -->
 <section class="px-grid-margin py-stack-xl bg-surface">
-<h2 class="font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface mb-stack-xl uppercase text-center">Market Breakthroughs</h2>
+<h2 class="reveal font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface mb-stack-xl uppercase text-center">Market Breakthroughs</h2>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-grid-gutter">
 <!-- Case 1 -->
 <a class="border-[3px] border-on-surface p-0 flex flex-col md:flex-row brutalist-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform" href="/case-studies">
-<div class="md:w-1/3 border-b-[3px] md:border-b-0 md:border-r-[3px] border-on-surface h-[200px] md:h-auto">
+<div class="frame-hover reveal md:w-1/3 border-b-[3px] md:border-b-0 md:border-r-[3px] border-on-surface h-[200px] md:h-auto">
 </div>
 <div class="md:w-2/3 p-stack-lg bg-surface">
 <span class="bg-secondary px-2 py-1 text-[10px] text-surface font-bold uppercase mb-4 inline-block">Medical Device</span>
@@ -201,7 +202,7 @@ const HTML = `<!-- Top Navigation Bar -->
 </a>
 <!-- Case 2 -->
 <a class="border-[3px] border-on-surface p-0 flex flex-col md:flex-row brutalist-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform" href="/case-studies">
-<div class="md:w-1/3 border-b-[3px] md:border-b-0 md:border-r-[3px] border-on-surface h-[200px] md:h-auto">
+<div class="frame-hover reveal md:w-1/3 border-b-[3px] md:border-b-0 md:border-r-[3px] border-on-surface h-[200px] md:h-auto">
 </div>
 <div class="md:w-2/3 p-stack-lg bg-surface">
 <span class="bg-primary px-2 py-1 text-[10px] text-surface font-bold uppercase mb-4 inline-block">Skincare Portfolio</span>
@@ -216,7 +217,7 @@ const HTML = `<!-- Top Navigation Bar -->
 <section class="px-grid-margin py-stack-xl bg-surface-container">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-grid-gutter items-start">
 <div class="lg:col-span-5">
-<h2 class="font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface mb-stack-lg uppercase leading-none">Ready for <br/>Compliance?</h2>
+<h2 class="reveal font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface mb-stack-lg uppercase leading-none">Ready for <br/>Compliance?</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">Request an initial consultation to discuss your product roadmap and regulatory requirements.</p>
 <div class="space-y-4">
 <div class="flex items-center gap-4">
@@ -315,8 +316,8 @@ export const Route = createFileRoute("/")({
 
 function Page() {
   useEffect(() => {
-    // @ts-expect-error - tailwind cdn
-    if (window.tailwind?.config) return;
+    const cleanup = initRevealAnimations();
+    return cleanup;
   }, []);
   return <div className="bg-surface text-on-surface font-body-md overflow-x-hidden" dangerouslySetInnerHTML={{ __html: HTML }} />;
 }

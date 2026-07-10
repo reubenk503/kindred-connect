@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
+import { initRevealAnimations } from "../lib/animations";
 
 const HTML = `<!-- TopNavBar -->
 
@@ -9,7 +10,7 @@ const HTML = `<!-- TopNavBar -->
 <div class="grid grid-cols-1 md:grid-cols-12 gap-grid-gutter items-end">
 <div class="md:col-span-8">
 <span class="font-label-caps text-label-caps bg-secondary-container text-on-secondary px-3 py-1 mb-stack-md inline-block">PORTFOLIO</span>
-<h1 class="font-display-xl text-display-xl-mobile md:text-display-xl uppercase leading-none mb-stack-md">
+<h1 class="reveal font-display-xl text-display-xl-mobile md:text-display-xl uppercase leading-none mb-stack-md">
                     Precision <br/>In Action
                 </h1>
 </div>
@@ -25,14 +26,14 @@ const HTML = `<!-- TopNavBar -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-xl">
 <!-- Case Study 1 -->
 <div class="group border-[3px] border-on-surface bg-surface-container-lowest transition-all duration-300 brutalist-shadow brutalist-shadow-hover">
-<div class="relative overflow-hidden border-b-[3px] border-on-surface aspect-[16/9]">
+<div class="frame-hover reveal relative overflow-hidden border-b-[3px] border-on-surface aspect-[16/9]">
 <div class="absolute top-3 left-3 right-3 flex flex-wrap gap-2">
 <span class="font-label-caps text-label-caps bg-on-surface text-surface px-3 py-1 uppercase">MedTech</span>
 <span class="font-label-caps text-label-caps bg-primary text-white px-3 py-1 uppercase">EU MDR</span>
 </div>
 </div>
 <div class="p-stack-lg">
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-stack-md">MDR Transition Strategy</h2>
+<h2 class="reveal font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-stack-md">MDR Transition Strategy</h2>
 <div class="space-y-4">
 <div class="border-l-[3px] border-primary-container pl-4">
 <p class="font-label-caps text-label-caps text-secondary mb-1">CHALLENGE</p>
@@ -50,14 +51,14 @@ const HTML = `<!-- TopNavBar -->
 </div>
 <!-- Case Study 2 -->
 <div class="group border-[3px] border-on-surface bg-surface-container-lowest transition-all duration-300 brutalist-shadow brutalist-shadow-hover">
-<div class="relative overflow-hidden border-b-[3px] border-on-surface aspect-[16/9]">
+<div class="frame-hover reveal relative overflow-hidden border-b-[3px] border-on-surface aspect-[16/9]">
 <div class="absolute top-3 left-3 right-3 flex flex-wrap gap-2">
 <span class="font-label-caps text-label-caps bg-on-surface text-surface px-3 py-1 uppercase">Cosmetics</span>
 <span class="font-label-caps text-label-caps bg-primary text-white px-3 py-1 uppercase">Expansion</span>
 </div>
 </div>
 <div class="p-stack-lg">
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-stack-md">Skincare Expansion</h2>
+<h2 class="reveal font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-stack-md">Skincare Expansion</h2>
 <div class="space-y-4">
 <div class="border-l-[3px] border-primary-container pl-4">
 <p class="font-label-caps text-label-caps text-secondary mb-1">CHALLENGE</p>
@@ -75,14 +76,14 @@ const HTML = `<!-- TopNavBar -->
 </div>
 <!-- Case Study 3 -->
 <div class="group border-[3px] border-on-surface bg-surface-container-lowest transition-all duration-300 brutalist-shadow brutalist-shadow-hover">
-<div class="relative overflow-hidden border-b-[3px] border-on-surface aspect-[16/9]">
+<div class="frame-hover reveal relative overflow-hidden border-b-[3px] border-on-surface aspect-[16/9]">
 <div class="absolute top-3 left-3 right-3 flex flex-wrap gap-2">
 <span class="font-label-caps text-label-caps bg-on-surface text-surface px-3 py-1 uppercase">Digital Health</span>
 <span class="font-label-caps text-label-caps bg-primary text-white px-3 py-1 uppercase">AI Software</span>
 </div>
 </div>
 <div class="p-stack-lg">
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-stack-md">AI Diagnostic Audit</h2>
+<h2 class="reveal font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-stack-md">AI Diagnostic Audit</h2>
 <div class="space-y-4">
 <div class="border-l-[3px] border-primary-container pl-4">
 <p class="font-label-caps text-label-caps text-secondary mb-1">CHALLENGE</p>
@@ -102,7 +103,7 @@ const HTML = `<!-- TopNavBar -->
 <div class="group border-[3px] border-on-surface bg-primary transition-all duration-300 brutalist-shadow hover:translate-x-1 hover:translate-y-1">
 <div class="p-stack-xl flex flex-col justify-center h-full">
 <span class="material-symbols-outlined text-surface text-6xl mb-stack-md" style="font-variation-settings: 'FILL' 1;">analytics</span>
-<h2 class="font-headline-lg text-headline-lg text-surface uppercase mb-stack-md">Want to be our next success story?</h2>
+<h2 class="reveal font-headline-lg text-headline-lg text-surface uppercase mb-stack-md">Want to be our next success story?</h2>
 <p class="font-body-lg text-body-lg text-surface-container mb-stack-lg">
                         We provide fixed-fee compliance audits that identify your risks before regulators do. Start your project today.
                     </p>
@@ -159,8 +160,8 @@ export const Route = createFileRoute("/case-studies")({
 
 function Page() {
   useEffect(() => {
-    // @ts-expect-error - tailwind cdn
-    if (window.tailwind?.config) return;
+    const cleanup = initRevealAnimations();
+    return cleanup;
   }, []);
   return <div className="bg-background text-on-background min-h-screen selection:bg-primary-container selection:text-on-primary-container" dangerouslySetInnerHTML={{ __html: HTML }} />;
 }

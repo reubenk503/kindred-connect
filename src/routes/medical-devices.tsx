@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
+import { initRevealAnimations } from "../lib/animations";
 
 const HTML = `<!-- TopNavBar -->
 
@@ -8,7 +9,7 @@ const HTML = `<!-- TopNavBar -->
 <section class="px-grid-margin py-stack-xl grid grid-cols-1 md:grid-cols-12 gap-grid-gutter border-b-[3px] border-on-surface bg-surface">
 <div class="md:col-span-8 flex flex-col justify-center">
 <span class="font-label-caps text-label-caps text-secondary-container mb-stack-md px-3 py-1 border-[2px] border-on-surface inline-block w-fit">REGULATORY FRAMEWORK</span>
-<h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl mb-stack-lg leading-[0.9] uppercase">Medical Devices <br/><span class="text-primary italic">Compliance.</span></h1>
+<h1 class="reveal font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl mb-stack-lg leading-[0.9] uppercase">Medical Devices <br/><span class="text-primary italic">Compliance.</span></h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
                     Navigating the shift from MDD to MDR and the implementation of UKCA. We provide surgical precision in regulatory strategy, technical documentation, and quality management systems for innovators.
                 </p>
@@ -17,21 +18,21 @@ const HTML = `<!-- TopNavBar -->
 <button class="bg-surface text-on-surface px-6 sm:px-8 py-3 sm:py-4 border-[3px] border-on-surface font-label-caps text-base sm:text-lg rounded-full brutalist-shadow brutalist-active max-w-full">DOWNLOAD GUIDE</button>
 </div>
 </div>
-<div class="md:col-span-4 relative h-[300px] sm:h-[400px] md:h-auto overflow-hidden md:overflow-visible">
+<div class="frame-hover reveal md:col-span-4 relative h-[300px] sm:h-[400px] md:h-auto overflow-hidden md:overflow-visible">
 <div class="absolute inset-0 border-[3px] border-on-surface bg-secondary-container z-0"></div>
 </div>
 </section>
 <!-- Classification Grid -->
 <section class="px-grid-margin py-stack-xl bg-surface-container">
 <div class="mb-stack-xl text-center md:text-left">
-<h2 class="font-headline-lg text-headline-lg uppercase mb-stack-sm">MDR / UKCA Classifications</h2>
+<h2 class="reveal font-headline-lg text-headline-lg uppercase mb-stack-sm">MDR / UKCA Classifications</h2>
 <p class="font-body-md text-body-md text-on-surface-variant">The pathway to market depends entirely on your device's risk profile.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-4 gap-grid-gutter">
 <!-- Class I -->
 <div class="bg-surface border-[3px] border-on-surface p-stack-lg brutalist-shadow-hover transition-all">
 <span class="font-display-xl text-4xl text-primary mb-stack-md block">I</span>
-<h3 class="font-subheading text-subheading uppercase mb-stack-sm">Class I (Low Risk)</h3>
+<h3 class="reveal font-subheading text-subheading uppercase mb-stack-sm">Class I (Low Risk)</h3>
 <p class="font-body-md text-body-md mb-stack-lg">Non-invasive equipment like wheelchairs, stethoscopes, and bandages. Usually self-declaration.</p>
 <div class="pt-stack-md border-t-[3px] border-on-surface">
 <span class="font-ui-mono text-ui-mono uppercase text-secondary">Self-Certified</span>
@@ -40,7 +41,7 @@ const HTML = `<!-- TopNavBar -->
 <!-- Class IIa -->
 <div class="bg-surface border-[3px] border-on-surface p-stack-lg brutalist-shadow-hover transition-all">
 <span class="font-display-xl text-4xl text-primary mb-stack-md block">IIa</span>
-<h3 class="font-subheading text-subheading uppercase mb-stack-sm">Class IIa (Medium)</h3>
+<h3 class="reveal font-subheading text-subheading uppercase mb-stack-sm">Class IIa (Medium)</h3>
 <p class="font-body-md text-body-md mb-stack-lg">Hearing aids, dental filling materials, or surgical clamps. Requires Notified Body intervention.</p>
 <div class="pt-stack-md border-t-[3px] border-on-surface">
 <span class="font-ui-mono text-ui-mono uppercase text-secondary">Audited Quality</span>
@@ -49,7 +50,7 @@ const HTML = `<!-- TopNavBar -->
 <!-- Class IIb -->
 <div class="bg-surface border-[3px] border-on-surface p-stack-lg brutalist-shadow-hover transition-all">
 <span class="font-display-xl text-4xl text-primary mb-stack-md block">IIb</span>
-<h3 class="font-subheading text-subheading uppercase mb-stack-sm">Class IIb (Medium-High)</h3>
+<h3 class="reveal font-subheading text-subheading uppercase mb-stack-sm">Class IIb (Medium-High)</h3>
 <p class="font-body-md text-body-md mb-stack-lg">Infusion pumps, ventilators, or bone plates. Intense scrutiny of technical files.</p>
 <div class="pt-stack-md border-t-[3px] border-on-surface">
 <span class="font-ui-mono text-ui-mono uppercase text-secondary">Design Dossier</span>
@@ -58,7 +59,7 @@ const HTML = `<!-- TopNavBar -->
 <!-- Class III -->
 <div class="bg-surface border-[3px] border-on-surface p-stack-lg brutalist-shadow-hover transition-all">
 <span class="font-display-xl text-4xl text-primary mb-stack-md block">III</span>
-<h3 class="font-subheading text-subheading uppercase mb-stack-sm">Class III (High Risk)</h3>
+<h3 class="reveal font-subheading text-subheading uppercase mb-stack-sm">Class III (High Risk)</h3>
 <p class="font-body-md text-body-md mb-stack-lg">Pacemakers, heart valves, or neurostimulators. Maximum level of regulatory oversight.</p>
 <div class="pt-stack-md border-t-[3px] border-on-surface">
 <span class="font-ui-mono text-ui-mono uppercase text-secondary">Clinical Trials</span>
@@ -70,7 +71,7 @@ const HTML = `<!-- TopNavBar -->
 <section class="py-stack-xl border-y-[3px] border-on-surface bg-white">
 <div class="px-grid-margin grid grid-cols-1 md:grid-cols-12 gap-grid-gutter">
 <div class="md:col-span-5">
-<h2 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl uppercase sticky top-32">The <span class="text-secondary-container">Pathway</span> To Approval</h2>
+<h2 class="reveal font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl uppercase sticky top-32">The <span class="text-secondary-container">Pathway</span> To Approval</h2>
 </div>
 <div class="md:col-span-7 space-y-stack-xl">
 <div class="flex gap-stack-lg items-start border-b-[3px] border-on-surface pb-stack-lg">
@@ -106,7 +107,7 @@ const HTML = `<!-- TopNavBar -->
 </section>
 <!-- FAQ Section -->
 <section class="px-grid-margin py-stack-xl bg-surface-container-low">
-<h2 class="font-headline-lg text-headline-lg uppercase mb-stack-xl text-center">Frequently Asked Questions</h2>
+<h2 class="reveal font-headline-lg text-headline-lg uppercase mb-stack-xl text-center">Frequently Asked Questions</h2>
 <div class="max-w-4xl mx-auto space-y-stack-md">
 <div class="bg-surface border-[3px] border-on-surface p-6 group cursor-pointer" onclick="this.querySelector('.faq-content').classList.toggle('hidden')">
 <div class="flex justify-between items-center">
@@ -140,7 +141,7 @@ const HTML = `<!-- TopNavBar -->
 <!-- CTA Section -->
 <section class="px-grid-margin py-stack-xl bg-on-surface text-surface text-center relative overflow-hidden">
 <div class="relative z-10 max-w-4xl mx-auto">
-<h2 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl uppercase mb-stack-lg">Ready for the <span class="text-primary-fixed">Audit?</span></h2>
+<h2 class="reveal font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl uppercase mb-stack-lg">Ready for the <span class="text-primary-fixed">Audit?</span></h2>
 <p class="font-body-lg text-body-lg mb-stack-xl opacity-80">Don't let regulatory hurdles stall your innovation. Get a comprehensive compliance roadmap today.</p>
 <div class="inline-block brutalist-shadow">
 <a class="bg-secondary-container text-on-surface px-6 sm:px-12 py-4 sm:py-6 border-[3px] border-surface font-headline-lg text-xl sm:text-2xl uppercase hover:bg-primary-container transition-colors inline-block max-w-full" href="/contact">
@@ -184,8 +185,8 @@ export const Route = createFileRoute("/medical-devices")({
 
 function Page() {
   useEffect(() => {
-    // @ts-expect-error - tailwind cdn
-    if (window.tailwind?.config) return;
+    const cleanup = initRevealAnimations();
+    return cleanup;
   }, []);
   return <div className="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden" dangerouslySetInnerHTML={{ __html: HTML }} />;
 }

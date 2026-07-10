@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
+import { initRevealAnimations } from "../lib/animations";
 
 const HTML = `<!-- TopNavBar -->
 
@@ -10,7 +11,7 @@ const HTML = `<!-- TopNavBar -->
 <div class="inline-block bg-secondary-container text-on-secondary-container px-4 py-1 border-[3px] border-on-surface mb-stack-md font-label-caps text-label-caps">
                     REGULATORY PRECISION
                 </div>
-<h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl mb-stack-lg">
+<h1 class="reveal font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl mb-stack-lg">
                     Supplement <br/> <span class="text-primary italic">Compliance.</span>
 </h1>
 <p class="font-body-lg text-body-lg max-w-xl mb-stack-xl">
@@ -26,14 +27,14 @@ const HTML = `<!-- TopNavBar -->
 </div>
 </div>
 <div class="md:col-span-5 relative h-72 sm:h-96 md:h-[460px]">
-<div class="absolute inset-0 border-[3px] border-on-surface bg-secondary-fixed overflow-hidden brutalist-shadow">
+<div class="frame-hover reveal absolute inset-0 border-[3px] border-on-surface bg-secondary-fixed overflow-hidden brutalist-shadow">
 </div>
 </div>
 </section>
 <div class="asymmetric-divider"></div>
 <!-- Frameworks Bento Grid -->
 <section class="px-grid-margin py-stack-xl bg-surface-container-low">
-<h2 class="font-headline-lg text-headline-lg mb-stack-xl">The Frameworks.</h2>
+<h2 class="reveal font-headline-lg text-headline-lg mb-stack-xl">The Frameworks.</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-grid-gutter">
 <!-- FSA/EFSA -->
 <div class="md:col-span-2 border-[3px] border-on-surface p-stack-lg bg-white brutalist-shadow flex flex-col justify-between">
@@ -42,7 +43,7 @@ const HTML = `<!-- TopNavBar -->
 <span class="material-symbols-outlined text-4xl text-primary" data-icon="gavel">gavel</span>
 <span class="font-ui-mono text-ui-mono uppercase bg-surface-container-highest px-2 py-1 border-[2px] border-on-surface">UK &amp; EU Standards</span>
 </div>
-<h3 class="font-headline-lg text-headline-lg mb-stack-md">FSA &amp; EFSA Navigation</h3>
+<h3 class="reveal font-headline-lg text-headline-lg mb-stack-md">FSA &amp; EFSA Navigation</h3>
 <p class="font-body-md text-body-md mb-stack-lg">Strategic guidance through the Food Standards Agency and European Food Safety Authority requirements. We ensure your formulations meet strictly enforced jurisdictional mandates without compromising your brand vision.</p>
 </div>
 <div class="grid grid-cols-2 gap-stack-md pt-stack-md border-t-[3px] border-on-surface">
@@ -59,20 +60,20 @@ const HTML = `<!-- TopNavBar -->
 <!-- Novel Foods -->
 <div class="border-[3px] border-on-surface p-stack-lg bg-tertiary-container brutalist-shadow">
 <span class="material-symbols-outlined text-4xl mb-stack-md" data-icon="biotech">biotech</span>
-<h3 class="font-subheading text-subheading mb-stack-md uppercase">Novel Food Applications</h3>
+<h3 class="reveal font-subheading text-subheading mb-stack-md uppercase">Novel Food Applications</h3>
 <p class="font-body-md text-body-md">Entering the market with CBD, Vitamin K2, or synthetic botanicals? We manage the entire application lifecycle for non-traditional food sources.</p>
 </div>
 <!-- Labeling Laws -->
 <div class="border-[3px] border-on-surface p-stack-lg bg-white brutalist-shadow">
 <span class="material-symbols-outlined text-4xl mb-stack-md text-secondary" data-icon="label">label</span>
-<h3 class="font-subheading text-subheading mb-stack-md uppercase">Labeling Laws</h3>
+<h3 class="reveal font-subheading text-subheading mb-stack-md uppercase">Labeling Laws</h3>
 <p class="font-body-md text-body-md">From font sizes to allergen declarations, we audit your packaging to prevent costly recalls and regulatory friction.</p>
 </div>
 <!-- Health Claims -->
 <div class="md:col-span-2 border-[3px] border-on-surface p-stack-lg bg-primary-container brutalist-shadow">
 <div class="flex flex-col md:flex-row gap-grid-gutter h-full">
 <div class="flex-1">
-<h3 class="font-headline-lg text-headline-lg mb-stack-md">Health Claims</h3>
+<h3 class="reveal font-headline-lg text-headline-lg mb-stack-md">Health Claims</h3>
 <p class="font-body-md text-body-md">What you say matters as much as what's inside. We validate structure/function claims to keep your marketing legally bulletproof.</p>
 </div>
 <div class="flex-1 bg-on-surface p-stack-md flex items-center justify-center">
@@ -100,25 +101,25 @@ const HTML = `<!-- TopNavBar -->
 <section class="px-grid-margin py-stack-xl overflow-hidden">
 <div class="flex flex-col md:flex-row gap-grid-gutter">
 <div class="md:w-1/3">
-<h2 class="font-display-xl-mobile md:font-headline-lg text-display-xl-mobile md:text-headline-lg sticky top-32">The <br/>Supplement <br/><span class="text-secondary">Protocol.</span></h2>
+<h2 class="reveal font-display-xl-mobile md:font-headline-lg text-display-xl-mobile md:text-headline-lg sticky top-32">The <br/>Supplement <br/><span class="text-secondary">Protocol.</span></h2>
 </div>
 <div class="md:w-2/3 space-y-stack-xl">
 <div class="group relative pl-stack-lg border-l-[3px] border-on-surface pb-stack-lg">
 <div class="absolute -left-[14px] top-0 w-6 h-6 bg-primary border-[3px] border-on-surface"></div>
 <h4 class="font-label-caps text-label-caps text-primary mb-stack-sm">STAGE 01</h4>
-<h3 class="font-headline-lg text-headline-lg mb-stack-md">Audit &amp; Gap Analysis</h3>
+<h3 class="reveal font-headline-lg text-headline-lg mb-stack-md">Audit &amp; Gap Analysis</h3>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">We dissect your current formulation and marketing collateral to identify high-risk areas and immediate compliance requirements.</p>
 </div>
 <div class="group relative pl-stack-lg border-l-[3px] border-on-surface pb-stack-lg">
 <div class="absolute -left-[14px] top-0 w-6 h-6 bg-secondary-container border-[3px] border-on-surface"></div>
 <h4 class="font-label-caps text-label-caps text-secondary mb-stack-sm">STAGE 02</h4>
-<h3 class="font-headline-lg text-headline-lg mb-stack-md">Dossier Engineering</h3>
+<h3 class="reveal font-headline-lg text-headline-lg mb-stack-md">Dossier Engineering</h3>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Assembly of technical data, stability testing results, and toxicological assessments into a submission-ready package for regulatory bodies.</p>
 </div>
 <div class="group relative pl-stack-lg border-l-[3px] border-on-surface">
 <div class="absolute -left-[14px] top-0 w-6 h-6 bg-tertiary-container border-[3px] border-on-surface"></div>
 <h4 class="font-label-caps text-label-caps text-tertiary mb-stack-sm">STAGE 03</h4>
-<h3 class="font-headline-lg text-headline-lg mb-stack-md">Market Entry Release</h3>
+<h3 class="reveal font-headline-lg text-headline-lg mb-stack-md">Market Entry Release</h3>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Final label verification, claims substantiation, and ongoing monitoring setup to ensure compliance remains static during scale.</p>
 </div>
 </div>
@@ -129,7 +130,7 @@ const HTML = `<!-- TopNavBar -->
 <section class="px-grid-margin py-stack-xl bg-surface-container">
 <div class="flex flex-col md:flex-row justify-between items-center gap-grid-gutter">
 <div class="max-w-xl">
-<h2 class="font-headline-lg text-headline-lg mb-stack-md">Our Other Specialized Pillars.</h2>
+<h2 class="reveal font-headline-lg text-headline-lg mb-stack-md">Our Other Specialized Pillars.</h2>
 <p class="font-body-md text-body-md text-on-surface-variant">We bring the same level of surgical precision to the cosmetics and medical device industries.</p>
 </div>
 <div class="flex flex-wrap gap-stack-md">
@@ -146,7 +147,7 @@ const HTML = `<!-- TopNavBar -->
 <!-- FAQ Section -->
 <section class="px-grid-margin py-stack-xl grid grid-cols-1 md:grid-cols-12 gap-grid-gutter">
 <div class="md:col-span-4">
-<h2 class="font-headline-sm md:font-headline-md text-headline-sm md:text-headline-md mb-stack-md leading-tight">Clarifications.</h2>
+<h2 class="reveal font-headline-sm md:font-headline-md text-headline-sm md:text-headline-md mb-stack-md leading-tight">Clarifications.</h2>
 <p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">Common points of friction in the supplement regulatory journey.</p>
 <div class="bg-surface-container-highest p-stack-md border-[3px] border-on-surface brutalist-shadow">
 <p class="font-ui-mono text-ui-mono">Last Updated: October 2024</p>
@@ -187,7 +188,7 @@ const HTML = `<!-- TopNavBar -->
 <div class="bg-on-surface text-surface p-stack-xl border-[3px] border-on-surface brutalist-shadow relative overflow-hidden">
 <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-grid-gutter items-center">
 <div>
-<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-stack-md leading-tight">Ready for <span class="text-primary-fixed italic">Approval?</span></h2>
+<h2 class="reveal font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-stack-md leading-tight">Ready for <span class="text-primary-fixed italic">Approval?</span></h2>
 <p class="font-body-lg text-body-lg mb-stack-xl opacity-80">Stop guessing. Get a definitive regulatory roadmap for your supplement brand.</p>
 <a class="bg-primary-container text-on-primary-container px-6 sm:px-10 py-4 sm:py-5 border-[3px] border-on-surface font-label-caps text-label-caps brutalist-shadow brutalist-button-hover transition-transform duration-200 inline-flex items-center gap-3 max-w-full" href="/contact">
                             BOOK STRATEGY CALL <span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
@@ -241,8 +242,8 @@ export const Route = createFileRoute("/supplements")({
 
 function Page() {
   useEffect(() => {
-    // @ts-expect-error - tailwind cdn
-    if (window.tailwind?.config) return;
+    const cleanup = initRevealAnimations();
+    return cleanup;
   }, []);
   return <div className="bg-surface text-on-surface font-body-md overflow-x-hidden" dangerouslySetInnerHTML={{ __html: HTML }} />;
 }
