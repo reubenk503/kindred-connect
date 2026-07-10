@@ -63,15 +63,15 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  --background: #f2fcf7;
   --foreground: oklch(0.129 0.042 264.695);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
+  --primary: #006b5c;
   --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
+  --secondary: #a43c12;
   --secondary-foreground: oklch(0.208 0.042 265.755);
   --muted: oklch(0.968 0.007 247.896);
   --muted-foreground: oklch(0.554 0.046 257.417);
@@ -132,6 +132,146 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
+/*
+ * Site design system: neo-brutalist Material-3-style tokens.
+ * Migrated from the runtime cdn.tailwindcss.com config in __root.tsx,
+ * which is unreliable in production alongside this build-time setup.
+ */
+@theme {
+  /* Colors */
+  --color-surface-dim: #d3dcd8;
+  --color-tertiary-fixed-dim: #e1c639;
+  --color-on-primary-container: #007162;
+  --color-secondary-fixed: #ffdbcf;
+  --color-on-secondary: #ffffff;
+  --color-on-background: #151d1b;
+  --color-on-error-container: #93000a;
+  --color-surface-container-high: #e1eae6;
+  --color-on-tertiary: #ffffff;
+  --color-primary-fixed-dim: #00dfc3;
+  --color-on-surface-variant: #3a4a46;
+  --color-outline-variant: #b9cac5;
+  --color-on-primary-fixed: #00201b;
+  --color-surface-tint: #006b5c;
+  --color-primary-fixed: #01fede;
+  --color-error: #ba1a1a;
+  --color-inverse-surface: #293230;
+  --color-surface-container-highest: #dbe5e1;
+  --color-on-primary: #ffffff;
+  --color-surface: #f2fcf7;
+  --color-inverse-on-surface: #e9f3ef;
+  --color-on-surface: #151d1b;
+  --color-surface-container-low: #ecf6f2;
+  --color-on-secondary-container: #6b1f00;
+  --color-surface-container: #e6f0ec;
+  --color-on-secondary-fixed-variant: #822800;
+  --color-secondary-container: #fe7e4f;
+  --color-on-error: #ffffff;
+  --color-tertiary: #6e5e00;
+  --color-inverse-primary: #00dfc3;
+  --color-outline: #6a7b76;
+  --color-on-tertiary-fixed: #211b00;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-primary-fixed-variant: #005045;
+  --color-primary-container: #00fede;
+  --color-secondary-fixed-dim: #ffb59c;
+  --color-on-secondary-fixed: #380c00;
+  --color-tertiary-container: #ffe253;
+  --color-on-tertiary-container: #746400;
+  --color-tertiary-fixed: #ffe253;
+  --color-surface-bright: #f2fcf7;
+  --color-error-container: #ffdad6;
+  --color-on-tertiary-fixed-variant: #534600;
+  --color-surface-variant: #dbe5e1;
+
+  /* Spacing */
+  --spacing-stack-xs: 4px;
+  --spacing-stack-sm: 8px;
+  --spacing-stack-md: clamp(12px, 2vw, 16px);
+  --spacing-stack-lg: clamp(20px, 4vw, 32px);
+  --spacing-stack-xl: clamp(40px, 7vw, 64px);
+  --spacing-grid-margin: clamp(16px, 4vw, 40px);
+  --spacing-grid-gutter: clamp(16px, 3vw, 24px);
+
+  /* Font families */
+  --font-label-caps: "Space Grotesk", sans-serif;
+  --font-ui-mono: "Space Grotesk", monospace;
+  --font-body-lg: "Hanken Grotesk", sans-serif;
+  --font-body-md: "Hanken Grotesk", sans-serif;
+  --font-subheading: "Space Grotesk", sans-serif;
+  --font-display-xl: "Anybody", sans-serif;
+  --font-display-xl-mobile: "Anybody", sans-serif;
+  --font-display-lg: "Anybody", sans-serif;
+  --font-display-lg-mobile: "Anybody", sans-serif;
+  --font-headline-lg: "Anybody", sans-serif;
+  --font-headline-lg-mobile: "Anybody", sans-serif;
+  --font-headline-md: "Anybody", sans-serif;
+  --font-headline-sm: "Anybody", sans-serif;
+
+  /* Fluid type scale */
+  --text-label-caps: clamp(11px, 1.7vw, 13px);
+  --text-label-caps--line-height: 1.25;
+  --text-label-caps--letter-spacing: 0px;
+  --text-label-caps--font-weight: 700;
+
+  --text-ui-mono: clamp(12px, 1.8vw, 14px);
+  --text-ui-mono--line-height: 1.45;
+  --text-ui-mono--font-weight: 500;
+
+  --text-body-lg: clamp(16px, 2vw, 18px);
+  --text-body-lg--line-height: 1.55;
+  --text-body-lg--font-weight: 400;
+
+  --text-body-md: clamp(15px, 1.8vw, 16px);
+  --text-body-md--line-height: 1.5;
+  --text-body-md--font-weight: 400;
+
+  --text-subheading: clamp(18px, 2.5vw, 20px);
+  --text-subheading--line-height: 1.3;
+  --text-subheading--letter-spacing: 0px;
+  --text-subheading--font-weight: 600;
+
+  --text-display-xl-mobile: clamp(38px, 12vw, 48px);
+  --text-display-xl-mobile--line-height: 0.98;
+  --text-display-xl-mobile--letter-spacing: 0px;
+  --text-display-xl-mobile--font-weight: 900;
+
+  --text-display-xl: clamp(52px, 8vw, 76px);
+  --text-display-xl--line-height: 0.98;
+  --text-display-xl--letter-spacing: 0px;
+  --text-display-xl--font-weight: 900;
+
+  --text-display-lg-mobile: clamp(34px, 10vw, 44px);
+  --text-display-lg-mobile--line-height: 1;
+  --text-display-lg-mobile--letter-spacing: 0px;
+  --text-display-lg-mobile--font-weight: 900;
+
+  --text-display-lg: clamp(44px, 7vw, 64px);
+  --text-display-lg--line-height: 1;
+  --text-display-lg--letter-spacing: 0px;
+  --text-display-lg--font-weight: 900;
+
+  --text-headline-lg-mobile: clamp(28px, 9vw, 32px);
+  --text-headline-lg-mobile--line-height: 1.08;
+  --text-headline-lg-mobile--letter-spacing: 0px;
+  --text-headline-lg-mobile--font-weight: 800;
+
+  --text-headline-lg: clamp(34px, 5.5vw, 44px);
+  --text-headline-lg--line-height: 1.08;
+  --text-headline-lg--letter-spacing: 0px;
+  --text-headline-lg--font-weight: 800;
+
+  --text-headline-md: clamp(28px, 5vw, 36px);
+  --text-headline-md--line-height: 1.1;
+  --text-headline-md--letter-spacing: 0px;
+  --text-headline-md--font-weight: 800;
+
+  --text-headline-sm: clamp(24px, 6vw, 30px);
+  --text-headline-sm--line-height: 1.1;
+  --text-headline-sm--letter-spacing: 0px;
+  --text-headline-sm--font-weight: 800;
+}
+
 @layer base {
   * {
     border-color: var(--color-border);
@@ -140,5 +280,6 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: "Hanken Grotesk", sans-serif;
   }
 }

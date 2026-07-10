@@ -14,62 +14,6 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SiteNav } from "../components/SiteNav";
 import { SiteFooter } from "../components/SiteFooter";
 
-const TAILWIND_CONFIG = `
-tailwind.config = {
-  darkMode: "class",
-  theme: {
-    extend: {
-      colors: {
-        "surface-dim": "#d3dcd8", "tertiary-fixed-dim": "#e1c639", "on-primary-container": "#007162",
-        "secondary-fixed": "#ffdbcf", "primary": "#006b5c", "on-secondary": "#ffffff",
-        "on-background": "#151d1b", "on-error-container": "#93000a", "surface-container-high": "#e1eae6",
-        "on-tertiary": "#ffffff", "primary-fixed-dim": "#00dfc3", "on-surface-variant": "#3a4a46",
-        "outline-variant": "#b9cac5", "on-primary-fixed": "#00201b", "surface-tint": "#006b5c",
-        "background": "#f2fcf7", "primary-fixed": "#01fede", "error": "#ba1a1a",
-        "inverse-surface": "#293230", "surface-container-highest": "#dbe5e1", "on-primary": "#ffffff",
-        "surface": "#f2fcf7", "inverse-on-surface": "#e9f3ef", "on-surface": "#151d1b",
-        "surface-container-low": "#ecf6f2", "on-secondary-container": "#6b1f00",
-        "surface-container": "#e6f0ec", "on-secondary-fixed-variant": "#822800",
-        "secondary-container": "#fe7e4f", "on-error": "#ffffff", "tertiary": "#6e5e00",
-        "inverse-primary": "#00dfc3", "outline": "#6a7b76", "on-tertiary-fixed": "#211b00",
-        "surface-container-lowest": "#ffffff", "on-primary-fixed-variant": "#005045",
-        "primary-container": "#00fede", "secondary-fixed-dim": "#ffb59c", "secondary": "#a43c12",
-        "on-secondary-fixed": "#380c00", "tertiary-container": "#ffe253",
-        "on-tertiary-container": "#746400", "tertiary-fixed": "#ffe253", "surface-bright": "#f2fcf7",
-        "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#534600", "surface-variant": "#dbe5e1"
-      },
-      borderRadius: { DEFAULT: "0rem", lg: "0rem", xl: "0rem", full: "9999px" },
-      spacing: {
-        "stack-xs": "4px", "stack-md": "clamp(12px, 2vw, 16px)", "stack-lg": "clamp(20px, 4vw, 32px)",
-        "stack-xl": "clamp(40px, 7vw, 64px)", "border-width": "3px",
-        "grid-margin": "clamp(16px, 4vw, 40px)", "grid-gutter": "clamp(16px, 3vw, 24px)", "stack-sm": "8px"
-      },
-      fontFamily: {
-        "label-caps": ["Space Grotesk"], "ui-mono": ["Space Grotesk"],
-        "body-lg": ["Hanken Grotesk"], "display-xl-mobile": ["Anybody"],
-        "body-md": ["Hanken Grotesk"], "subheading": ["Space Grotesk"],
-        "headline-lg-mobile": ["Anybody"], "display-xl": ["Anybody"], "headline-lg": ["Anybody"]
-      },
-      fontSize: {
-        "label-caps": ["clamp(11px, 1.7vw, 13px)", { lineHeight: "1.25", letterSpacing: "0", fontWeight: "700" }],
-        "ui-mono": ["clamp(12px, 1.8vw, 14px)", { lineHeight: "1.45", fontWeight: "500" }],
-        "body-lg": ["clamp(16px, 2vw, 18px)", { lineHeight: "1.55", fontWeight: "400" }],
-        "display-xl-mobile": ["clamp(38px, 12vw, 48px)", { lineHeight: "0.98", letterSpacing: "0", fontWeight: "900" }],
-        "body-md": ["clamp(15px, 1.8vw, 16px)", { lineHeight: "1.5", fontWeight: "400" }],
-        "subheading": ["clamp(18px, 2.5vw, 20px)", { lineHeight: "1.3", letterSpacing: "0", fontWeight: "600" }],
-        "headline-lg-mobile": ["clamp(28px, 9vw, 32px)", { lineHeight: "1.08", letterSpacing: "0", fontWeight: "800" }],
-        "display-xl": ["clamp(52px, 8vw, 76px)", { lineHeight: "0.98", letterSpacing: "0", fontWeight: "900" }],
-        "headline-lg": ["clamp(34px, 5.5vw, 44px)", { lineHeight: "1.08", letterSpacing: "0", fontWeight: "800" }],
-        "display-lg-mobile": ["clamp(34px, 10vw, 44px)", { lineHeight: "1", letterSpacing: "0", fontWeight: "900" }],
-        "display-lg": ["clamp(44px, 7vw, 64px)", { lineHeight: "1", letterSpacing: "0", fontWeight: "900" }],
-        "headline-sm": ["clamp(24px, 6vw, 30px)", { lineHeight: "1.1", letterSpacing: "0", fontWeight: "800" }],
-        "headline-md": ["clamp(28px, 5vw, 36px)", { lineHeight: "1.1", letterSpacing: "0", fontWeight: "800" }]
-      }
-    }
-  }
-};
-`;
-
 const BRUTALIST_CSS = `
 .brutalist-shadow { box-shadow: 5px 5px 0px 0px #151d1b; }
 .brutalist-shadow-hover:hover { transform: translate(-3px, -3px); box-shadow: 8px 8px 0px 0px #151d1b; }
@@ -150,8 +94,6 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
-        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries" />
-        <script dangerouslySetInnerHTML={{ __html: TAILWIND_CONFIG }} />
         <style dangerouslySetInnerHTML={{ __html: BRUTALIST_CSS }} />
       </head>
       <body>
