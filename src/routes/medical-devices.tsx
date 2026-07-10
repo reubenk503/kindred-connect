@@ -19,7 +19,6 @@ const HTML = `<!-- TopNavBar -->
 </div>
 <div class="md:col-span-4 relative h-[300px] sm:h-[400px] md:h-auto overflow-hidden md:overflow-visible">
 <div class="absolute inset-0 border-[3px] border-on-surface bg-secondary-container z-0"></div>
-<img class="absolute md:-top-4 md:-left-4 inset-0 md:inset-auto w-full h-full object-cover border-[3px] border-on-surface z-10" data-alt="A professional medical device prototype, possibly a high-tech robotic surgical tool or a sleek diagnostic scanner, shot in a high-contrast editorial style. The lighting is crisp, emphasizing metallic textures and smooth white surfaces. The background is a clean, minimalist laboratory setting with teal and charcoal color accents. The aesthetic is ultra-modern and clinical yet visually striking, reflecting regulatory precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSKWrVSmslHwMG4awUINAHVU_-PoYWy_nnahdJ8qlEKM7trPLlzwo3lpLJBuK5JXydk6lmTMwOHU9pU14GJEMfWfWaP4OWWYji3AnlWjvMVB7oaHPE5VgAH31qYJXxjgaxPb_58qdN1VyaAWjrVNAjEruX8FPB6CJAUqQGEBj0Y2C87bqsYMufu1ML1dCqQ6AkObnafgwAIs0bBDBKiexRhU19AAOmE34H62CnLvOzOjtgraX5yAQjtlTysNzCeB5f6FuHr3XxHSfg"/>
 </div>
 </section>
 <!-- Classification Grid -->

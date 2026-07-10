@@ -27,7 +27,6 @@ const HTML = `<!-- TopNavBar -->
 </div>
 <div class="md:col-span-5 relative h-72 sm:h-96 md:h-[460px]">
 <div class="absolute inset-0 border-[3px] border-on-surface bg-secondary-fixed overflow-hidden brutalist-shadow">
-<img alt="Supplements packaging mockup" class="w-full h-full object-cover grayscale mix-blend-multiply opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdAseSVG8Nj5lpVZA_-2Pv0rM4ye0LrC6-YV6ernHHn66Lpe0YKqdppQuDXTG2Gfwh5aya5YwmB3Gvd3b9NRDeS-JreHkECkjhGYdv91T7r3VAH7y6li_v36a3UobFiAKdW9Plr_gVfjNL5lb2uyb3tZ5x88Tyqk4jW1BeNixIFfSEYQicWm5b-SVzVeEbpr0TR-wbTq9jUWzQpPH6rpeUHRFu1pJstWpMI-dXRUlHTsGDT-hSYlChuFzcNfZZKuzh4-BsHgT2ILEC"/>
 </div>
 </div>
 </section>

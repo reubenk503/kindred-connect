@@ -26,7 +26,6 @@ const HTML = `<!-- Top Navigation Bar -->
 <!-- Asymmetric visual element -->
 <div class="absolute w-full h-[120%] border-[3px] border-on-surface rotate-3 translate-x-12 translate-y-8 bg-secondary-container/10 -z-10"></div>
 <div class="w-full aspect-[3/4] border-[3px] border-on-surface bg-surface-container relative z-10 overflow-hidden brutalist-shadow">
-<img class="w-full h-full object-cover grayscale contrast-125" data-alt="A striking editorial portrait of a professional woman looking confident and authoritative, high-fashion aesthetic, sharp lines, neutral studio lighting with high contrast shadows. The palette is dominated by cream, charcoal, and a pop of electric teal. Modern neo-brutalist photography style with a 12-column grid overlay." src="/images/hero-portrait.jpg"/>
 <div class="absolute bottom-0 left-0 bg-primary-container p-stack-md border-t-[3px] border-r-[3px] border-on-surface">
 <span class="font-label-caps text-label-caps text-on-primary-fixed uppercase">EST. 2014</span>
 </div>
@@ -192,7 +191,6 @@ const HTML = `<!-- Top Navigation Bar -->
 <!-- Case 1 -->
 <a class="border-[3px] border-on-surface p-0 flex flex-col md:flex-row brutalist-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform" href="/case-studies">
 <div class="md:w-1/3 border-b-[3px] md:border-b-0 md:border-r-[3px] border-on-surface h-[200px] md:h-auto">
-<img class="w-full h-full object-cover" data-alt="Close up high-end medical packaging aesthetic, minimalist white box with sophisticated typography and clinical graphics. Soft medical blue lighting, professional pharmaceutical photography style, 8k resolution, clean and sterile look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqXleZANWLhGi2Jq5Wx9TMJqVyyDQRLIQpP0B1ydj6EC65gLfJ1DguQ3XVDTk93aiQEjksFRQYgYNLBDcTVpWQCSocLHOsMfhRemHWFDBfL9vFdo6mIcIkH9q2fY19HRLNhN9qtyJCfzEpatnXG8eExLJcxjhNnsEH0JRFkhIPcuV28_RnNpA0FfVxGcbSh0om1fWY1J71XLInV1wGKzjTkdG85cE6qLeAHahWebRPZCbrQq0MbGTKRJPhp8adTxdftOQY3FCqUeZ2"/>
 </div>
 <div class="md:w-2/3 p-stack-lg bg-surface">
 <span class="bg-secondary px-2 py-1 text-[10px] text-surface font-bold uppercase mb-4 inline-block">Medical Device</span>
@@ -204,7 +202,6 @@ const HTML = `<!-- Top Navigation Bar -->
 <!-- Case 2 -->
 <a class="border-[3px] border-on-surface p-0 flex flex-col md:flex-row brutalist-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform" href="/case-studies">
 <div class="md:w-1/3 border-b-[3px] md:border-b-0 md:border-r-[3px] border-on-surface h-[200px] md:h-auto">
-<img class="w-full h-full object-cover" data-alt="Macro photography of luxury skincare cream texture with professional product lighting. Aesthetic of high-end cosmetics, neutral background, sharp focus, 3px charcoal border style, neo-brutalist editorial layout, dramatic highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyjGeArnf2JZtZnczMgXQQLsK27LZ7ADgnn9AwbSeOACxBx8w2_veveyhyq1YHPAErpl3cT2NKuItd0a_KFjQ5ITzKeTZoABK93ktqn1r9ThjoiNu_qv8cODuKa8l8BpYUEp4WnciomhIka2GSDhy7SjkVu0h4Cl5f0uoxVkqHknakRN0tDWhWVeoRvWOXkea__7-bjHxkkBnIpwOgMda2aDmpjj4Rb4ITC0Aj23fhNBv4h0jUIen-vOf9IaAGLMos6UXeJA-rIefO"/>
 </div>
 <div class="md:w-2/3 p-stack-lg bg-surface">
 <span class="bg-primary px-2 py-1 text-[10px] text-surface font-bold uppercase mb-4 inline-block">Skincare Portfolio</span>
