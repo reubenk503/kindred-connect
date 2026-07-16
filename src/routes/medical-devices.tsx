@@ -106,7 +106,7 @@ const HTML = `<!-- TopNavBar -->
 </div>
 </section>
 <!-- FAQ Section -->
-<section class="px-grid-margin py-stack-xl bg-surface-container-low">
+<section class="px-grid-margin py-stack-xl bg-primary-container">
 <h2 class="reveal font-headline-lg text-headline-lg uppercase mb-stack-xl text-center">Frequently Asked Questions</h2>
 <div class="max-w-4xl mx-auto space-y-stack-md">
 <div class="bg-surface border-[3px] border-on-surface p-6 group cursor-pointer" onclick="this.querySelector('.faq-content').classList.toggle('hidden')">

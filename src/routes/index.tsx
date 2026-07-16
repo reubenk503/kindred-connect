@@ -214,22 +214,22 @@ const HTML = `<!-- Top Navigation Bar -->
 </div>
 </section>
 <!-- Consultation Booking Form -->
-<section class="px-grid-margin py-stack-xl bg-surface-container">
+<section class="px-grid-margin py-stack-xl bg-primary-container">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-grid-gutter items-start">
 <div class="lg:col-span-5">
 <h2 class="reveal font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface mb-stack-lg uppercase leading-none">Ready for <br/>Compliance?</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg">Request an initial consultation to discuss your product roadmap and regulatory requirements.</p>
 <div class="space-y-4">
 <div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary" data-icon="mail">mail</span>
+<span class="material-symbols-outlined text-on-primary-container" data-icon="mail">mail</span>
 <span class="font-ui-mono">strategy@agotacsaszar.com</span>
 </div>
 <div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+<span class="material-symbols-outlined text-on-primary-container" data-icon="call">call</span>
 <span class="font-ui-mono">+44 (0) 20 7946 0123</span>
 </div>
 <div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<span class="material-symbols-outlined text-on-primary-container" data-icon="location_on">location_on</span>
 <span class="font-ui-mono">London | Budapest | Brussels</span>
 </div>
 </div>

@@ -127,7 +127,7 @@ const HTML = `<!-- TopNavBar -->
 </section>
 <div class="asymmetric-divider"></div>
 <!-- Other Services Redirection (Internal Cross-links) -->
-<section class="px-grid-margin py-stack-xl bg-surface-container">
+<section class="px-grid-margin py-stack-xl bg-primary-container">
 <div class="flex flex-col md:flex-row justify-between items-center gap-grid-gutter">
 <div class="max-w-xl">
 <h2 class="reveal font-headline-lg text-headline-lg mb-stack-md">Our Other Specialized Pillars.</h2>
@@ -138,7 +138,7 @@ const HTML = `<!-- TopNavBar -->
 <span class="material-symbols-outlined text-secondary" data-icon="brush">brush</span> Cosmetics
                     </a>
 <a class="bg-surface border-[3px] border-on-surface px-6 py-4 font-label-caps text-label-caps brutalist-shadow brutalist-button-hover transition-all flex items-center gap-2 uppercase" href="/medical-devices">
-<span class="material-symbols-outlined text-primary" data-icon="medical_services">medical_services</span> Med Devices
+<span class="material-symbols-outlined text-on-primary-container" data-icon="medical_services">medical_services</span> Med Devices
                     </a>
 </div>
 </div>

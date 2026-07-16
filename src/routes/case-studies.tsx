@@ -115,10 +115,10 @@ const HTML = `<!-- TopNavBar -->
 </div>
 </section>
 <!-- CTA Rule Section -->
-<section class="border-t-[3px] border-on-surface flex overflow-hidden whitespace-nowrap py-stack-sm bg-surface">
+<section class="border-t-[3px] border-on-surface flex overflow-hidden whitespace-nowrap py-stack-sm bg-primary-container">
 <div class="animate-marquee flex gap-8 items-center">
 <span class="font-display-xl text-4xl uppercase opacity-20">Regulatory Compliance</span>
-<span class="material-symbols-outlined text-primary">circle</span>
+<span class="material-symbols-outlined text-on-primary-container">circle</span>
 <span class="font-display-xl text-4xl uppercase opacity-20">Precision Engineering</span>
 <span class="material-symbols-outlined text-primary">circle</span>
 <span class="font-display-xl text-4xl uppercase opacity-20">Global Market Access</span>

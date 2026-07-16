@@ -62,7 +62,7 @@ const HTML = `<!-- TopNavBar -->
 </div>
 </section>
 <!-- Process Breakdown -->
-<section class="py-stack-xl px-grid-margin bg-surface-container">
+<section class="py-stack-xl px-grid-margin bg-primary-container">
 <h2 class="reveal font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-stack-xl uppercase text-center">Our Compliance Pipeline</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border-[3px] border-on-surface">
 <!-- Step 1 -->

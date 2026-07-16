@@ -23,7 +23,7 @@ const HTML = `<!-- TopNavBar -->
 </div>
 </section>
 <!-- Mission & Approach: Asymmetric Grid -->
-<section class="px-grid-margin py-stack-xl bg-surface-container-low border-b-[3px] border-on-surface overflow-hidden relative">
+<section class="px-grid-margin py-stack-xl bg-primary-container border-b-[3px] border-on-surface overflow-hidden relative">
 <div class="grid grid-cols-1 md:grid-cols-12 gap-grid-gutter relative z-10">
 <div class="md:col-span-5 border-r-[3px] border-on-surface pr-grid-gutter">
 <span class="bg-secondary-container text-on-secondary-container font-label-caps px-2 py-1 mb-stack-md inline-block">MISSION STATEMENT</span>
@@ -40,7 +40,7 @@ const HTML = `<!-- TopNavBar -->
 <div class="md:col-span-7 flex flex-col justify-between pt-stack-xl md:pt-0">
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-grid-gutter">
 <div class="p-stack-md border-[3px] border-on-surface bg-white brutalist-shadow">
-<span class="material-symbols-outlined text-4xl text-primary mb-stack-sm">architecture</span>
+<span class="material-symbols-outlined text-4xl text-on-primary-container mb-stack-sm">architecture</span>
 <h3 class="reveal font-subheading text-subheading mb-stack-xs uppercase">Structural Integrity</h3>
 <p class="font-body-md text-body-md">We build compliance from the ground up, ensuring every policy is anchored in operational reality.</p>
 </div>
@@ -53,7 +53,7 @@ const HTML = `<!-- TopNavBar -->
 <div class="mt-stack-xl">
 <div class="flex items-center gap-stack-md">
 <div class="h-[3px] flex-grow bg-on-surface"></div>
-<div class="font-ui-mono text-ui-mono uppercase tracking-widest text-primary font-bold">The Csaszar Protocol</div>
+<div class="font-ui-mono text-ui-mono uppercase tracking-widest text-on-primary-container font-bold">The Csaszar Protocol</div>
 </div>
 </div>
 </div>

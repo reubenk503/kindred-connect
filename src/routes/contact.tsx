@@ -93,7 +93,7 @@ const HTML = `<!-- TopNavBar -->
 </div>
 </section>
 <!-- Map Placeholder -->
-<section class="px-grid-margin py-stack-xl">
+<section class="px-grid-margin py-stack-xl bg-primary-container">
 <div class="frame-hover reveal h-[300px] sm:h-[400px] w-full border-[3px] border-on-surface relative grayscale contrast-125 overflow-hidden">
 <div class="w-full h-full bg-cover bg-center" data-alt="A neo-brutalist styled map of Budapest and Brussels in high contrast black and white with teal markers indicating office locations." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9PffjQJG_no4GPFvbYk5yk92qTjskwvixLBooZNerQB22oBCNSLL0V13rFVBtenDoNp6wV-mAHSHYkwRdjoI_bM0dGDi8LoWPYQHkPfbuDwSroT1Os5oOWR4qihae3EJePF5GLhroS3wcyyYwCY4Se1-kxBEkWCdefdrE483pmIjgCO_-Mvy_VnK2YNSGHu-aTWCJB6IIT-FGZFfFsTAdITOzT0vT6kyMdyop6ky2Xvc17hLxlWhpAmNf3CCNMAxTPVDsCV_JeBqu')"></div>
 <div class="absolute bottom-4 right-4 sm:bottom-10 sm:right-10 bg-on-surface text-surface p-4 sm:p-6 border-[3px] border-surface brutalist-shadow max-w-[calc(100%-2rem)]">
