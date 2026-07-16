@@ -111,7 +111,7 @@ const HTML = `<!-- TopNavBar -->
     inputs.forEach(input => {
         input.addEventListener('focus', () => {
             const label = input.parentElement.querySelector('label');
-            if(label) label.style.color = '#006b5c';
+            if(label) label.style.color = '#3D7A42';
         });
         input.addEventListener('blur', () => {
             const label = input.parentElement.querySelector('label');

@@ -20,7 +20,7 @@ const BRUTALIST_CSS = `
 .brutalist-active:active, .brutalist-shadow-active:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0px 0px #151d1b; }
 .brutalist-button-hover:hover { transform: translate(-3px, -3px); }
 .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; font-family: 'Material Symbols Outlined'; }
-.active-tab { background-color: #01fede; color: #00201b; box-shadow: 2px 2px 0px 0px #151d1b; transform: translate(2px, 2px); }
+.active-tab { background-color: #6FBF73; color: #0F2411; box-shadow: 2px 2px 0px 0px #151d1b; transform: translate(2px, 2px); }
 select { appearance: none; background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='square' stroke-linejoin='arcs'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e"); background-repeat: no-repeat; background-position: right 1rem center; background-size: 1.5em; }
 ::-webkit-scrollbar { width: 12px; }
 ::-webkit-scrollbar-track { background: #f2fcf7; }
