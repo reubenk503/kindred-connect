@@ -83,7 +83,7 @@ const HTML = `<!-- TopNavBar -->
 </div>
 </div>
 <div class="p-stack-lg">
-<h2 class="reveal font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-stack-md">AI Diagnostic Audit</h2>
+<h2 class="reveal font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-stack-md">Software as a Medical Device</h2>
 <div class="space-y-4">
 <div class="border-l-[3px] border-primary-container pl-4">
 <p class="font-label-caps text-label-caps text-secondary mb-1">CHALLENGE</p>
