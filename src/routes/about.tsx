@@ -111,17 +111,17 @@ const HTML = `<!-- TopNavBar -->
 <div class="border-[3px] border-outline-variant p-stack-lg group hover:border-primary-fixed transition-colors">
 <div class="font-display-xl opacity-20 group-hover:opacity-100 transition-opacity mb-stack-sm leading-none">20+</div>
 <h3 class="reveal font-subheading text-subheading mb-stack-xs uppercase">Years Experience</h3>
-<p class="font-body-md text-surface-variant">Leading complex regulatory transformations for Fortune 500 enterprises across EMEA and North America.</p>
+<p class="font-body-md text-surface-variant">Guiding businesses through complex regulatory landscapes across the UK and EU.</p>
 </div>
 <div class="border-[3px] border-outline-variant p-stack-lg group hover:border-primary-fixed transition-colors">
 <span class="material-symbols-outlined text-5xl text-primary-fixed mb-stack-sm" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
 <h3 class="reveal font-subheading text-subheading mb-stack-xs uppercase">Global Certifications</h3>
-<p class="font-body-md text-surface-variant">Dual-certified Lead Auditor for ISO 27001 &amp; 9001, plus specialized AML and GDPR designations.</p>
+<p class="font-body-md text-surface-variant">Trained across multiple regulatory frameworks with a focus on quality and safety.</p>
 </div>
 <div class="border-[3px] border-outline-variant p-stack-lg group hover:border-primary-fixed transition-colors">
 <span class="material-symbols-outlined text-5xl text-primary-fixed mb-stack-sm">history_edu</span>
 <h3 class="reveal font-subheading text-subheading mb-stack-xs uppercase">Industry Thought Leader</h3>
-<p class="font-body-md text-surface-variant">Frequent keynote speaker at Global Regulatory summits and author of the "Responsive Compliance" framework.</p>
+<p class="font-body-md text-surface-variant">A hands-on partner known for clear guidance and practical, results-driven advice.</p>
 </div>
 </div>
 </section>
