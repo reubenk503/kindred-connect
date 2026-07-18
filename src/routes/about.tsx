@@ -121,7 +121,7 @@ const HTML = `<!-- TopNavBar -->
 <div class="border-[3px] border-outline-variant p-stack-lg group hover:border-primary-fixed transition-colors">
 <span class="material-symbols-outlined text-5xl text-primary-fixed mb-stack-sm">history_edu</span>
 <h3 class="reveal font-subheading text-subheading mb-stack-xs uppercase">Industry Thought Leader</h3>
-<p class="font-body-md text-surface-variant">Frequent keynote speaker at Global Regulatory summits and author of the "Responsive Compliance" framework.</p>
+<p class="font-body-md text-surface-variant">A hands-on partner known for clear guidance and practical, results-driven advice.</p>
 </div>
 </div>
 </section>
