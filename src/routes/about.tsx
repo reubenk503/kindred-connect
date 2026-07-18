@@ -111,7 +111,7 @@ const HTML = `<!-- TopNavBar -->
 <div class="border-[3px] border-outline-variant p-stack-lg group hover:border-primary-fixed transition-colors">
 <div class="font-display-xl opacity-20 group-hover:opacity-100 transition-opacity mb-stack-sm leading-none">20+</div>
 <h3 class="reveal font-subheading text-subheading mb-stack-xs uppercase">Years Experience</h3>
-<p class="font-body-md text-surface-variant">Leading complex regulatory transformations for Fortune 500 enterprises across EMEA and North America.</p>
+<p class="font-body-md text-surface-variant">Guiding businesses through complex regulatory landscapes across the UK and EU.</p>
 </div>
 <div class="border-[3px] border-outline-variant p-stack-lg group hover:border-primary-fixed transition-colors">
 <span class="material-symbols-outlined text-5xl text-primary-fixed mb-stack-sm" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
