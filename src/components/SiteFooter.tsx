@@ -86,7 +86,10 @@ export function SiteFooter() {
             Contact
           </h4>
           <p className="font-body-md text-on-surface-variant">
-            hello@agotacsaszar.com
+            agotacsreg@gmail.com
+          </p>
+          <p className="font-body-md text-on-surface-variant mt-stack-sm">
+            07925 684072
           </p>
         </div>
       </div>

@@ -70,23 +70,21 @@ const HTML = `<!-- TopNavBar -->
 <!-- Contact Details -->
 <div class="space-y-8">
 <div>
-<h3 class="reveal font-label-caps text-label-caps text-primary border-b-[3px] border-primary inline-block mb-6">GLOBAL HQ</h3>
+<h3 class="reveal font-label-caps text-label-caps text-primary border-b-[3px] border-primary inline-block mb-6">BASED IN</h3>
 <div class="space-y-2">
-<p class="font-subheading text-subheading">Budapest, Hungary</p>
-<p class="font-body-md text-on-surface-variant">Andrássy út 42, 1061</p>
-<p class="font-body-md text-on-surface-variant">+36 (1) 450-2800</p>
+<p class="font-subheading text-subheading">Gillingham, Dorset</p>
+<p class="font-body-md text-on-surface-variant">United Kingdom</p>
 </div>
 </div>
 <div>
-<h3 class="reveal font-label-caps text-label-caps text-primary border-b-[3px] border-primary inline-block mb-6">SATELLITE OFFICE</h3>
+<h3 class="reveal font-label-caps text-label-caps text-primary border-b-[3px] border-primary inline-block mb-6">PHONE</h3>
 <div class="space-y-2">
-<p class="font-subheading text-subheading">Brussels, Belgium</p>
-<p class="font-body-md text-on-surface-variant">Rue de la Loi 175, 1048</p>
+<p class="font-subheading text-subheading">07925 684072</p>
 </div>
 </div>
 <div>
 <h3 class="reveal font-label-caps text-label-caps text-primary border-b-[3px] border-primary inline-block mb-6">EMAIL</h3>
-<p class="font-subheading text-subheading underline decoration-4 underline-offset-4 decoration-primary-container">hello@agotacsaszar.com</p>
+<p class="font-subheading text-subheading underline decoration-4 underline-offset-4 decoration-primary-container">agotacsreg@gmail.com</p>
 </div>
 </div>
 </div>
@@ -98,7 +96,7 @@ const HTML = `<!-- TopNavBar -->
 <div class="w-full h-full bg-cover bg-center" data-alt="A neo-brutalist styled map of Budapest and Brussels in high contrast black and white with teal markers indicating office locations." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9PffjQJG_no4GPFvbYk5yk92qTjskwvixLBooZNerQB22oBCNSLL0V13rFVBtenDoNp6wV-mAHSHYkwRdjoI_bM0dGDi8LoWPYQHkPfbuDwSroT1Os5oOWR4qihae3EJePF5GLhroS3wcyyYwCY4Se1-kxBEkWCdefdrE483pmIjgCO_-Mvy_VnK2YNSGHu-aTWCJB6IIT-FGZFfFsTAdITOzT0vT6kyMdyop6ky2Xvc17hLxlWhpAmNf3CCNMAxTPVDsCV_JeBqu')"></div>
 <div class="absolute bottom-4 right-4 sm:bottom-10 sm:right-10 bg-on-surface text-surface p-4 sm:p-6 border-[3px] border-surface brutalist-shadow max-w-[calc(100%-2rem)]">
 <p class="font-label-caps text-label-caps mb-2">CURRENT LOCATION</p>
-<p class="font-headline-lg text-xl sm:text-2xl">BUDAPEST (CET)</p>
+<p class="font-headline-lg text-xl sm:text-2xl">GILLINGHAM, DORSET (GMT)</p>
 </div>
 </div>
 </section>

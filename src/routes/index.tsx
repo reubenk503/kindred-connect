@@ -222,7 +222,7 @@ const HTML = `<!-- Top Navigation Bar -->
 <div class="space-y-4">
 <div class="flex items-center gap-4">
 <span class="material-symbols-outlined text-on-primary-container" data-icon="mail">mail</span>
-<span class="font-ui-mono">strategy@agotacsaszar.com</span>
+<span class="font-ui-mono">agotacsreg@gmail.com</span>
 </div>
 <div class="flex items-center gap-4">
 <span class="material-symbols-outlined text-on-primary-container" data-icon="call">call</span>
@@ -230,7 +230,7 @@ const HTML = `<!-- Top Navigation Bar -->
 </div>
 <div class="flex items-center gap-4">
 <span class="material-symbols-outlined text-on-primary-container" data-icon="location_on">location_on</span>
-<span class="font-ui-mono">London | Budapest | Brussels</span>
+<span class="font-ui-mono">Gillingham, Dorset · UK</span>
 </div>
 </div>
 </div>
