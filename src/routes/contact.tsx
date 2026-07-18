@@ -70,23 +70,21 @@ const HTML = `<!-- TopNavBar -->
 <!-- Contact Details -->
 <div class="space-y-8">
 <div>
-<h3 class="reveal font-label-caps text-label-caps text-primary border-b-[3px] border-primary inline-block mb-6">GLOBAL HQ</h3>
+<h3 class="reveal font-label-caps text-label-caps text-primary border-b-[3px] border-primary inline-block mb-6">BASED IN</h3>
 <div class="space-y-2">
-<p class="font-subheading text-subheading">Budapest, Hungary</p>
-<p class="font-body-md text-on-surface-variant">Andrássy út 42, 1061</p>
-<p class="font-body-md text-on-surface-variant">+36 (1) 450-2800</p>
+<p class="font-subheading text-subheading">Gillingham, Dorset</p>
+<p class="font-body-md text-on-surface-variant">United Kingdom</p>
 </div>
 </div>
 <div>
-<h3 class="reveal font-label-caps text-label-caps text-primary border-b-[3px] border-primary inline-block mb-6">SATELLITE OFFICE</h3>
+<h3 class="reveal font-label-caps text-label-caps text-primary border-b-[3px] border-primary inline-block mb-6">PHONE</h3>
 <div class="space-y-2">
-<p class="font-subheading text-subheading">Brussels, Belgium</p>
-<p class="font-body-md text-on-surface-variant">Rue de la Loi 175, 1048</p>
+<p class="font-subheading text-subheading">07925 684072</p>
 </div>
 </div>
 <div>
 <h3 class="reveal font-label-caps text-label-caps text-primary border-b-[3px] border-primary inline-block mb-6">EMAIL</h3>
-<p class="font-subheading text-subheading underline decoration-4 underline-offset-4 decoration-primary-container">hello@agotacsaszar.com</p>
+<p class="font-subheading text-subheading underline decoration-4 underline-offset-4 decoration-primary-container">agotacsreg@gmail.com</p>
 </div>
 </div>
 </div>
