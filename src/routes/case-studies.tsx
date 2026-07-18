@@ -83,7 +83,7 @@ const HTML = `<!-- TopNavBar -->
 </div>
 </div>
 <div class="p-stack-lg">
-<h2 class="reveal font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-stack-md">AI Diagnostic Audit</h2>
+<h2 class="reveal font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-stack-md">Software as a Medical Device</h2>
 <div class="space-y-4">
 <div class="border-l-[3px] border-primary-container pl-4">
 <p class="font-label-caps text-label-caps text-secondary mb-1">CHALLENGE</p>
@@ -104,9 +104,6 @@ const HTML = `<!-- TopNavBar -->
 <div class="p-stack-xl flex flex-col justify-center h-full">
 <span class="material-symbols-outlined text-surface text-6xl mb-stack-md" style="font-variation-settings: 'FILL' 1;">analytics</span>
 <h2 class="reveal font-headline-lg text-headline-lg text-surface uppercase mb-stack-md">Want to be our next success story?</h2>
-<p class="font-body-lg text-body-lg text-surface-container mb-stack-lg">
-                        We provide fixed-fee compliance audits that identify your risks before regulators do. Start your project today.
-                    </p>
 <a class="bg-surface text-on-surface border-[3px] border-on-surface px-6 sm:px-8 py-4 font-label-caps text-label-caps self-start hover:bg-secondary-container hover:text-white transition-all brutalist-shadow inline-block max-w-full" href="/contact">
                         BOOK A CONSULTATION
                     </a>
