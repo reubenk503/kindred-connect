@@ -64,10 +64,10 @@ export function SiteFooter() {
             </li>
             <li>
               <Link
-                to="/case-studies"
+                to="/businesses"
                 className="font-body-md text-on-surface-variant hover:text-primary"
               >
-                Case Studies
+                Businesses
               </Link>
             </li>
             <li>

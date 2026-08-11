@@ -185,12 +185,12 @@ const HTML = `<!-- Top Navigation Bar -->
 </div>
 </div>
 </section>
-<!-- Case Studies Section -->
+<!-- Businesses Section -->
 <section class="px-grid-margin py-stack-xl bg-surface">
 <h2 class="reveal font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface mb-stack-xl uppercase text-center">Market Breakthroughs</h2>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-grid-gutter">
 <!-- Case 1 -->
-<a class="border-[3px] border-on-surface p-0 flex flex-col md:flex-row brutalist-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform" href="/case-studies">
+<a class="border-[3px] border-on-surface p-0 flex flex-col md:flex-row brutalist-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform" href="/businesses">
 <div class="frame-hover reveal md:w-1/3 border-b-[3px] md:border-b-0 md:border-r-[3px] border-on-surface h-[200px] md:h-auto">
 </div>
 <div class="md:w-2/3 p-stack-lg bg-surface">
@@ -201,7 +201,7 @@ const HTML = `<!-- Top Navigation Bar -->
 </div>
 </a>
 <!-- Case 2 -->
-<a class="border-[3px] border-on-surface p-0 flex flex-col md:flex-row brutalist-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform" href="/case-studies">
+<a class="border-[3px] border-on-surface p-0 flex flex-col md:flex-row brutalist-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform" href="/businesses">
 <div class="frame-hover reveal md:w-1/3 border-b-[3px] md:border-b-0 md:border-r-[3px] border-on-surface h-[200px] md:h-auto">
 </div>
 <div class="md:w-2/3 p-stack-lg bg-surface">
