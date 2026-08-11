@@ -18,6 +18,7 @@ const HTML = `<!-- TopNavBar -->
 </div>
 <div class="hidden md:flex md:col-span-4 justify-end">
 <div class="frame-hover reveal w-full aspect-square border-[3px] border-on-surface brutalist-shadow bg-surface-container-highest relative overflow-hidden group">
+<img src="/images/hero-portrait.jpg" alt="Portrait of Agota Csaszar, regulatory consultant" class="w-full h-full object-cover object-top"/>
 </div>
 </div>
 </div>
