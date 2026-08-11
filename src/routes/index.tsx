@@ -185,34 +185,6 @@ const HTML = `<!-- Top Navigation Bar -->
 </div>
 </div>
 </section>
-<!-- Case Studies Section -->
-<section class="px-grid-margin py-stack-xl bg-surface">
-<h2 class="reveal font-headline-lg-mobile lg:font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface mb-stack-xl uppercase text-center">Market Breakthroughs</h2>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-grid-gutter">
-<!-- Case 1 -->
-<a class="border-[3px] border-on-surface p-0 flex flex-col md:flex-row brutalist-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform" href="/case-studies">
-<div class="frame-hover reveal md:w-1/3 border-b-[3px] md:border-b-0 md:border-r-[3px] border-on-surface h-[200px] md:h-auto">
-</div>
-<div class="md:w-2/3 p-stack-lg bg-surface">
-<span class="bg-secondary px-2 py-1 text-[10px] text-surface font-bold uppercase mb-4 inline-block">Medical Device</span>
-<h4 class="font-subheading text-subheading uppercase mb-2">MDR Transition for Class IIa</h4>
-<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">Successfully navigated the transition for a leading dental implant manufacturer, reducing audit time by 35% through precision file prep.</p>
-<div class="font-label-caps text-label-caps text-primary uppercase">Outcome: 100% File Acceptance</div>
-</div>
-</a>
-<!-- Case 2 -->
-<a class="border-[3px] border-on-surface p-0 flex flex-col md:flex-row brutalist-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform" href="/case-studies">
-<div class="frame-hover reveal md:w-1/3 border-b-[3px] md:border-b-0 md:border-r-[3px] border-on-surface h-[200px] md:h-auto">
-</div>
-<div class="md:w-2/3 p-stack-lg bg-surface">
-<span class="bg-primary px-2 py-1 text-[10px] text-surface font-bold uppercase mb-4 inline-block">Skincare Portfolio</span>
-<h4 class="font-subheading text-subheading uppercase mb-2">UK/EU Market Expansion</h4>
-<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">Consolidated PiF files for 120 SKUs, managing RP services and CPSR submissions for a rapid multi-territory launch.</p>
-<div class="font-label-caps text-label-caps text-primary uppercase">Outcome: Market Launch 3 Months Early</div>
-</div>
-</a>
-</div>
-</section>
 <!-- Trusted By -->
 <section class="px-grid-margin py-stack-xl bg-surface-container-low border-y-[3px] border-on-surface">
 <div class="flex flex-col md:flex-row md:items-end justify-between mb-stack-lg gap-stack-md">
@@ -220,18 +192,22 @@ const HTML = `<!-- Top Navigation Bar -->
 <p class="font-body-md text-body-md text-on-surface-variant max-w-md">Agota has supported regulatory and quality programmes for global consumer and technology brands.</p>
 </div>
 <div class="grid grid-cols-2 md:grid-cols-4 gap-grid-gutter">
-<div class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex items-center justify-center text-center min-h-[120px]">
-<span class="font-display-xl text-2xl md:text-3xl uppercase tracking-tight">Oriflame</span>
-</div>
-<div class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex items-center justify-center text-center min-h-[120px]">
-<span class="font-display-xl text-xl md:text-2xl uppercase tracking-tight leading-tight">Neal's Yard<br/>Remedies</span>
-</div>
-<div class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex items-center justify-center text-center min-h-[120px]">
-<span class="font-display-xl text-2xl md:text-3xl uppercase tracking-[0.2em]">Dyson</span>
-</div>
-<div class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex items-center justify-center text-center min-h-[120px]">
-<span class="font-display-xl text-2xl md:text-3xl uppercase tracking-tight">Unilever</span>
-</div>
+<a href="/businesses" class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex flex-col items-center justify-center gap-3 text-center min-h-[140px]">
+<img src="https://icons.duckduckgo.com/ip3/oriflame.com.ico" alt="Oriflame logo" loading="lazy" width="40" height="40" class="w-10 h-10 object-contain"/>
+<span class="font-display-xl text-xl md:text-2xl uppercase tracking-tight leading-tight">Oriflame</span>
+</a>
+<a href="/businesses" class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex flex-col items-center justify-center gap-3 text-center min-h-[140px]">
+<img src="https://icons.duckduckgo.com/ip3/nealsyardremedies.com.ico" alt="Neal's Yard Remedies logo" loading="lazy" width="40" height="40" class="w-10 h-10 object-contain"/>
+<span class="font-display-xl text-lg md:text-xl uppercase tracking-tight leading-tight">Neal's Yard<br/>Remedies</span>
+</a>
+<a href="/businesses" class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex flex-col items-center justify-center gap-3 text-center min-h-[140px]">
+<img src="https://icons.duckduckgo.com/ip3/dyson.com.ico" alt="Dyson logo" loading="lazy" width="40" height="40" class="w-10 h-10 object-contain"/>
+<span class="font-display-xl text-xl md:text-2xl uppercase tracking-[0.15em] leading-tight">Dyson</span>
+</a>
+<a href="/businesses" class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex flex-col items-center justify-center gap-3 text-center min-h-[140px]">
+<img src="https://icons.duckduckgo.com/ip3/unilever.com.ico" alt="Unilever logo" loading="lazy" width="40" height="40" class="w-10 h-10 object-contain"/>
+<span class="font-display-xl text-xl md:text-2xl uppercase tracking-tight leading-tight">Unilever</span>
+</a>
 </div>
 </section>
 <!-- Consultation Booking Form -->
@@ -248,7 +224,7 @@ const HTML = `<!-- Top Navigation Bar -->
 </div>
 <div class="flex items-center gap-4">
 <span class="material-symbols-outlined text-on-primary-container" data-icon="call">call</span>
-<span class="font-ui-mono">+44 (0) 20 7946 0123</span>
+<span class="font-ui-mono">07925 684072</span>
 </div>
 <div class="flex items-center gap-4">
 <span class="material-symbols-outlined text-on-primary-container" data-icon="location_on">location_on</span>

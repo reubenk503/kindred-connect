@@ -5,7 +5,7 @@ const NAV_ITEMS: { to: string; label: string }[] = [
   { to: "/supplements", label: "Supplements" },
   { to: "/cosmetics", label: "Cosmetics" },
   { to: "/medical-devices", label: "Med Devices" },
-  { to: "/case-studies", label: "Case Studies" },
+  { to: "/businesses", label: "Businesses" },
   { to: "/about", label: "About" },
 ];
 
