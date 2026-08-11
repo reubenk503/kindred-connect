@@ -213,7 +213,29 @@ const HTML = `<!-- Top Navigation Bar -->
 </a>
 </div>
 </section>
+<!-- Trusted By -->
+<section class="px-grid-margin py-stack-xl bg-surface-container-low border-y-[3px] border-on-surface">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-stack-lg gap-stack-md">
+<h2 class="reveal font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase leading-none">Businesses <span class="text-primary italic">Worked With</span></h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Agota has supported regulatory and quality programmes for global consumer and technology brands.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-grid-gutter">
+<div class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex items-center justify-center text-center min-h-[120px]">
+<span class="font-display-xl text-2xl md:text-3xl uppercase tracking-tight">Oriflame</span>
+</div>
+<div class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex items-center justify-center text-center min-h-[120px]">
+<span class="font-display-xl text-xl md:text-2xl uppercase tracking-tight leading-tight">Neal's Yard<br/>Remedies</span>
+</div>
+<div class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex items-center justify-center text-center min-h-[120px]">
+<span class="font-display-xl text-2xl md:text-3xl uppercase tracking-[0.2em]">Dyson</span>
+</div>
+<div class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex items-center justify-center text-center min-h-[120px]">
+<span class="font-display-xl text-2xl md:text-3xl uppercase tracking-tight">Unilever</span>
+</div>
+</div>
+</section>
 <!-- Consultation Booking Form -->
+
 <section class="px-grid-margin py-stack-xl bg-primary-container">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-grid-gutter items-start">
 <div class="lg:col-span-5">
