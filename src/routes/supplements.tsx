@@ -28,6 +28,8 @@ const HTML = `<!-- TopNavBar -->
 </div>
 <div class="hidden md:block md:col-span-5 relative md:h-[460px]">
 <div class="frame-hover reveal absolute inset-0 border-[3px] border-on-surface bg-secondary-fixed overflow-hidden brutalist-shadow">
+<img src="/images/dossier.jpg" alt="Supplement compliance dossiers stacked on a desk" class="w-full h-full object-cover"/>
+
 </div>
 </div>
 </section>
