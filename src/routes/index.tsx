@@ -220,18 +220,22 @@ const HTML = `<!-- Top Navigation Bar -->
 <p class="font-body-md text-body-md text-on-surface-variant max-w-md">Agota has supported regulatory and quality programmes for global consumer and technology brands.</p>
 </div>
 <div class="grid grid-cols-2 md:grid-cols-4 gap-grid-gutter">
-<div class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex items-center justify-center text-center min-h-[120px]">
-<span class="font-display-xl text-2xl md:text-3xl uppercase tracking-tight">Oriflame</span>
-</div>
-<div class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex items-center justify-center text-center min-h-[120px]">
-<span class="font-display-xl text-xl md:text-2xl uppercase tracking-tight leading-tight">Neal's Yard<br/>Remedies</span>
-</div>
-<div class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex items-center justify-center text-center min-h-[120px]">
-<span class="font-display-xl text-2xl md:text-3xl uppercase tracking-[0.2em]">Dyson</span>
-</div>
-<div class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex items-center justify-center text-center min-h-[120px]">
-<span class="font-display-xl text-2xl md:text-3xl uppercase tracking-tight">Unilever</span>
-</div>
+<a href="/businesses" class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex flex-col items-center justify-center gap-3 text-center min-h-[140px]">
+<img src="https://icons.duckduckgo.com/ip3/oriflame.com.ico" alt="Oriflame logo" loading="lazy" width="40" height="40" class="w-10 h-10 object-contain"/>
+<span class="font-display-xl text-xl md:text-2xl uppercase tracking-tight leading-tight">Oriflame</span>
+</a>
+<a href="/businesses" class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex flex-col items-center justify-center gap-3 text-center min-h-[140px]">
+<img src="https://icons.duckduckgo.com/ip3/nealsyardremedies.com.ico" alt="Neal's Yard Remedies logo" loading="lazy" width="40" height="40" class="w-10 h-10 object-contain"/>
+<span class="font-display-xl text-lg md:text-xl uppercase tracking-tight leading-tight">Neal's Yard<br/>Remedies</span>
+</a>
+<a href="/businesses" class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex flex-col items-center justify-center gap-3 text-center min-h-[140px]">
+<img src="https://icons.duckduckgo.com/ip3/dyson.com.ico" alt="Dyson logo" loading="lazy" width="40" height="40" class="w-10 h-10 object-contain"/>
+<span class="font-display-xl text-xl md:text-2xl uppercase tracking-[0.15em] leading-tight">Dyson</span>
+</a>
+<a href="/businesses" class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex flex-col items-center justify-center gap-3 text-center min-h-[140px]">
+<img src="https://icons.duckduckgo.com/ip3/unilever.com.ico" alt="Unilever logo" loading="lazy" width="40" height="40" class="w-10 h-10 object-contain"/>
+<span class="font-display-xl text-xl md:text-2xl uppercase tracking-tight leading-tight">Unilever</span>
+</a>
 </div>
 </section>
 <!-- Consultation Booking Form -->
