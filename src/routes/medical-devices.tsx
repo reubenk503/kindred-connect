@@ -174,10 +174,10 @@ const HTML = `<!-- TopNavBar -->
 export const Route = createFileRoute("/medical-devices")({
   head: () => ({
     meta: [
-      { title: "Medical Devices Compliance | Agota Csaszar" },
-      { name: "description", content: "Medical Devices Compliance | Agota Csaszar" },
-      { property: "og:title", content: "Medical Devices Compliance | Agota Csaszar" },
-      { property: "og:description", content: "Medical Devices Compliance | Agota Csaszar" },
+      { title: "Medical Devices Compliance | Csaszar Regulatory" },
+      { name: "description", content: "Medical Devices Compliance | Csaszar Regulatory" },
+      { property: "og:title", content: "Medical Devices Compliance | Csaszar Regulatory" },
+      { property: "og:description", content: "Medical Devices Compliance | Csaszar Regulatory" },
     ],
   }),
   component: Page,

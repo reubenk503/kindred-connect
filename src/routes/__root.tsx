@@ -69,9 +69,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Agota Csaszar | Regulatory Services" },
+      { title: "Csaszar Regulatory" },
       { name: "description", content: "Precision regulatory compliance for supplements, cosmetics, and medical devices." },
-      { property: "og:title", content: "Agota Csaszar | Regulatory Services" },
+      { property: "og:title", content: "Csaszar Regulatory" },
       { property: "og:description", content: "Precision regulatory compliance for supplements, cosmetics, and medical devices." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

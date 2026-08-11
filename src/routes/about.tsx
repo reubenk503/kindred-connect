@@ -156,10 +156,10 @@ const HTML = `<!-- TopNavBar -->
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About | Agota Csaszar Regulatory Services" },
-      { name: "description", content: "About | Agota Csaszar Regulatory Services" },
-      { property: "og:title", content: "About | Agota Csaszar Regulatory Services" },
-      { property: "og:description", content: "About | Agota Csaszar Regulatory Services" },
+      { title: "About | Csaszar Regulatory Services" },
+      { name: "description", content: "About | Csaszar Regulatory Services" },
+      { property: "og:title", content: "About | Csaszar Regulatory Services" },
+      { property: "og:description", content: "About | Csaszar Regulatory Services" },
     ],
   }),
   component: Page,

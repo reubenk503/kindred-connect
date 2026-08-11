@@ -304,10 +304,10 @@ const HTML = `<!-- Top Navigation Bar -->
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Agota Csaszar | Regulatory Services" },
-      { name: "description", content: "Agota Csaszar | Regulatory Services" },
-      { property: "og:title", content: "Agota Csaszar | Regulatory Services" },
-      { property: "og:description", content: "Agota Csaszar | Regulatory Services" },
+      { title: "Csaszar Regulatory" },
+      { name: "description", content: "Csaszar Regulatory" },
+      { property: "og:title", content: "Csaszar Regulatory" },
+      { property: "og:description", content: "Csaszar Regulatory" },
     ],
   }),
   component: Page,
