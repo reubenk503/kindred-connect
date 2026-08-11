@@ -16,7 +16,7 @@ const HTML = `<!-- TopNavBar -->
                         Agota Csaszar doesn't just navigate regulations; she builds the frameworks that make them a competitive advantage.
                     </p>
 </div>
-<div class="md:col-span-4 flex justify-end">
+<div class="hidden md:flex md:col-span-4 justify-end">
 <div class="frame-hover reveal w-full aspect-square border-[3px] border-on-surface brutalist-shadow bg-surface-container-highest relative overflow-hidden group">
 </div>
 </div>
