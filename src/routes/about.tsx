@@ -18,7 +18,6 @@ const HTML = `<!-- TopNavBar -->
 </div>
 <div class="hidden md:flex md:col-span-4 justify-end">
 <div class="frame-hover reveal w-full aspect-square border-[3px] border-on-surface brutalist-shadow bg-surface-container-highest relative overflow-hidden group">
-<img src="/images/architecture.jpg" alt="Brutalist concrete facade with strong geometric shadows" class="absolute inset-0 w-full h-full object-cover"/>
 
 
 </div>

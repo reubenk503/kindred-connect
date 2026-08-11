@@ -1,15 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { initRevealAnimations } from "../lib/animations";
-import dysonLogo from "../assets/brands/dyson.svg.asset.json";
-import nealsYardLogo from "../assets/brands/neals-yard-remedies.png.asset.json";
-import oriflameLogo from "../assets/brands/oriflame.svg.asset.json";
-import unileverLogo from "../assets/brands/unilever.svg.asset.json";
+import dysonLogo from "../assets/brands/dyson.svg";
+import nealsYardLogo from "../assets/brands/neals-yard-remedies.png";
+import oriflameLogo from "../assets/brands/oriflame.svg";
+import unileverLogo from "../assets/brands/unilever.svg";
 
 const COMPANIES = [
   {
     name: "Oriflame",
-    logo: oriflameLogo.url,
+    logo: oriflameLogo,
     logoClass: "w-full max-w-[210px] h-16",
     domain: "oriflame.com",
     sector: "Beauty & Cosmetics",
@@ -19,7 +19,7 @@ const COMPANIES = [
   },
   {
     name: "Neal's Yard Remedies",
-    logo: nealsYardLogo.url,
+    logo: nealsYardLogo,
     logoClass: "w-24 h-24",
     domain: "nealsyardremedies.com",
     sector: "Natural & Organic",
@@ -29,7 +29,7 @@ const COMPANIES = [
   },
   {
     name: "Dyson",
-    logo: dysonLogo.url,
+    logo: dysonLogo,
     logoClass: "w-full max-w-[210px] h-16",
     domain: "dyson.com",
     sector: "Technology & Personal Care",
@@ -39,7 +39,7 @@ const COMPANIES = [
   },
   {
     name: "Unilever",
-    logo: unileverLogo.url,
+    logo: unileverLogo,
     logoClass: "w-24 h-24",
     domain: "unilever.com",
     sector: "Global FMCG",
