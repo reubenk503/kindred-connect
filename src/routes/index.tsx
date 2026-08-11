@@ -31,7 +31,7 @@ const HTML = `<!-- Top Navigation Bar -->
 <!-- Asymmetric visual element -->
 <div class="absolute w-full h-[120%] border-[3px] border-on-surface rotate-3 translate-x-12 translate-y-8 bg-secondary-container/10 -z-10"></div>
 <div class="frame-hover reveal w-full aspect-[3/4] border-[3px] border-on-surface bg-surface-container relative z-10 overflow-hidden brutalist-shadow">
-<img src="/images/hero-portrait.jpg" alt="Portrait of Agota Csaszar, regulatory consultant" class="w-full h-full object-cover object-top"/>
+
 <div class="absolute bottom-0 left-0 bg-primary-container p-stack-md border-t-[3px] border-r-[3px] border-on-surface">
 <span class="font-label-caps text-label-caps text-on-primary-fixed uppercase">EST. 2014</span>
 </div>
