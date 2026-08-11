@@ -1,10 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { initRevealAnimations } from "../lib/animations";
-import dysonLogo from "../assets/brands/dyson.svg.asset.json";
-import nealsYardLogo from "../assets/brands/neals-yard-remedies.png.asset.json";
-import oriflameLogo from "../assets/brands/oriflame.svg.asset.json";
-import unileverLogo from "../assets/brands/unilever.svg.asset.json";
+import dysonLogo from "../assets/brands/dyson.svg";
+import nealsYardLogo from "../assets/brands/neals-yard-remedies.png";
+import oriflameLogo from "../assets/brands/oriflame.svg";
+import unileverLogo from "../assets/brands/unilever.svg";
 
 const HTML = `<!-- Top Navigation Bar -->
 
@@ -199,16 +199,16 @@ const HTML = `<!-- Top Navigation Bar -->
 </div>
 <div class="grid grid-cols-2 md:grid-cols-4 gap-grid-gutter">
 <a href="/businesses" class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex flex-col items-center justify-center gap-3 text-center min-h-[140px]">
-<img src="${oriflameLogo.url}" alt="Oriflame logo" class="w-full max-w-[150px] h-16 object-contain"/>
+<img src="${oriflameLogo}" alt="Oriflame logo" class="w-full max-w-[150px] h-16 object-contain"/>
 </a>
 <a href="/businesses" class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex flex-col items-center justify-center gap-3 text-center min-h-[140px]">
-<img src="${nealsYardLogo.url}" alt="Neal's Yard Remedies logo" class="w-24 h-24 object-contain"/>
+<img src="${nealsYardLogo}" alt="Neal's Yard Remedies logo" class="w-24 h-24 object-contain"/>
 </a>
 <a href="/businesses" class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex flex-col items-center justify-center gap-3 text-center min-h-[140px]">
-<img src="${dysonLogo.url}" alt="Dyson logo" class="w-full max-w-[150px] h-16 object-contain"/>
+<img src="${dysonLogo}" alt="Dyson logo" class="w-full max-w-[150px] h-16 object-contain"/>
 </a>
 <a href="/businesses" class="border-[3px] border-on-surface bg-white brutalist-shadow p-stack-lg flex flex-col items-center justify-center gap-3 text-center min-h-[140px]">
-<img src="${unileverLogo.url}" alt="Unilever logo" class="w-24 h-24 object-contain"/>
+<img src="${unileverLogo}" alt="Unilever logo" class="w-24 h-24 object-contain"/>
 </a>
 </div>
 </section>

@@ -1,10 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { initRevealAnimations } from "../lib/animations";
-import dysonLogo from "../assets/brands/dyson.svg.asset.json";
-import nealsYardLogo from "../assets/brands/neals-yard-remedies.png.asset.json";
-import oriflameLogo from "../assets/brands/oriflame.svg.asset.json";
-import unileverLogo from "../assets/brands/unilever.svg.asset.json";
+import dysonLogo from "../assets/brands/dyson.svg";
+import nealsYardLogo from "../assets/brands/neals-yard-remedies.png";
+import oriflameLogo from "../assets/brands/oriflame.svg";
+import unileverLogo from "../assets/brands/unilever.svg";
 
 const COMPANIES = [
   {
