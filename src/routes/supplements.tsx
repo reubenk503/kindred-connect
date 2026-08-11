@@ -26,7 +26,7 @@ const HTML = `<!-- TopNavBar -->
                     </a>
 </div>
 </div>
-<div class="md:col-span-5 relative h-72 sm:h-96 md:h-[460px]">
+<div class="hidden md:block md:col-span-5 relative md:h-[460px]">
 <div class="frame-hover reveal absolute inset-0 border-[3px] border-on-surface bg-secondary-fixed overflow-hidden brutalist-shadow">
 </div>
 </div>

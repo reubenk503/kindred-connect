@@ -22,7 +22,7 @@ const HTML = `<!-- TopNavBar -->
 </button>
 </div>
 </div>
-<div class="frame-hover reveal md:col-span-5 relative bg-surface-container-highest h-[300px] md:h-[400px]">
+<div class="frame-hover reveal hidden md:block md:col-span-5 relative bg-surface-container-highest md:h-[400px]">
 </div>
 </section>
 <!-- Regulation Overview: Bento Grid -->
