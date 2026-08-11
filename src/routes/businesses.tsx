@@ -5,6 +5,8 @@ import { initRevealAnimations } from "../lib/animations";
 const COMPANIES = [
   {
     name: "Oriflame",
+    initials: "OF",
+    wordmark: "font-display-xl text-2xl md:text-3xl uppercase tracking-[0.18em]",
     domain: "oriflame.com",
     sector: "Beauty & Cosmetics",
     tag: "EU CPR",
@@ -13,6 +15,8 @@ const COMPANIES = [
   },
   {
     name: "Neal's Yard Remedies",
+    initials: "NY",
+    wordmark: "font-body-lg text-xl md:text-2xl italic tracking-tight",
     domain: "nealsyardremedies.com",
     sector: "Natural & Organic",
     tag: "UK SCPN",
@@ -21,6 +25,8 @@ const COMPANIES = [
   },
   {
     name: "Dyson",
+    initials: "DY",
+    wordmark: "font-display-xl text-2xl md:text-3xl uppercase tracking-[0.32em]",
     domain: "dyson.com",
     sector: "Technology & Personal Care",
     tag: "Quality Systems",
@@ -29,6 +35,8 @@ const COMPANIES = [
   },
   {
     name: "Unilever",
+    initials: "UL",
+    wordmark: "font-subheading text-2xl md:text-3xl tracking-tight",
     domain: "unilever.com",
     sector: "Global FMCG",
     tag: "Multi-market",
@@ -93,17 +101,13 @@ function Page() {
                 className="border-[3px] border-on-surface bg-surface-container-lowest brutalist-shadow brutalist-shadow-hover transition-all duration-300"
               >
                 <div className="border-b-[3px] border-on-surface bg-white p-stack-lg flex items-center gap-4">
-                  <img
-                    src={`https://icons.duckduckgo.com/ip3/${c.domain}.ico`}
-                    alt={`${c.name} logo`}
-                    loading="lazy"
-                    width={48}
-                    height={48}
-                    className="w-12 h-12 object-contain border-[2px] border-on-surface bg-white p-1 shrink-0"
-                  />
-                  <span className="font-display-xl text-2xl md:text-3xl uppercase tracking-tight leading-none min-w-0 break-words">
-                    {c.name}
+                  <span
+                    aria-hidden="true"
+                    className="w-12 h-12 shrink-0 border-[2px] border-on-surface bg-on-surface text-surface flex items-center justify-center font-display-xl text-xl leading-none"
+                  >
+                    {c.initials}
                   </span>
+                  <span className={`min-w-0 break-words leading-none ${c.wordmark}`}>{c.name}</span>
                 </div>
                 <div className="p-stack-lg">
                   <div className="flex flex-wrap gap-2 mb-stack-md">
