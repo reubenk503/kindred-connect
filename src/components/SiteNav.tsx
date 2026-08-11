@@ -17,7 +17,7 @@ export function SiteNav() {
         to="/"
         className="font-headline-lg text-[18px] sm:text-[20px] xl:text-headline-lg uppercase tracking-normal text-on-surface font-black hover:text-primary transition-colors leading-none"
       >
-        Agota Csaszar
+        Csaszar Regulatory
       </Link>
       <div className="order-3 flex w-full gap-x-4 gap-y-2 overflow-x-auto pb-1 md:flex-wrap md:justify-center xl:order-none xl:w-auto xl:flex-nowrap xl:justify-start xl:overflow-visible xl:pb-0">
         {NAV_ITEMS.map((item) => {

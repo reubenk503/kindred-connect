@@ -129,10 +129,10 @@ const HTML = `<!-- TopNavBar -->
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact & Booking | Agota Csaszar Regulatory Services" },
-      { name: "description", content: "Contact & Booking | Agota Csaszar Regulatory Services" },
-      { property: "og:title", content: "Contact & Booking | Agota Csaszar Regulatory Services" },
-      { property: "og:description", content: "Contact & Booking | Agota Csaszar Regulatory Services" },
+      { title: "Contact & Booking | Csaszar Regulatory Services" },
+      { name: "description", content: "Contact & Booking | Csaszar Regulatory Services" },
+      { property: "og:title", content: "Contact & Booking | Csaszar Regulatory Services" },
+      { property: "og:description", content: "Contact & Booking | Csaszar Regulatory Services" },
     ],
   }),
   component: Page,

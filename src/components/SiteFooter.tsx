@@ -9,7 +9,7 @@ export function SiteFooter() {
             to="/"
             className="font-headline-lg text-headline-lg uppercase tracking-normal text-on-surface font-black block mb-stack-md leading-none"
           >
-            Agota Csaszar
+            Csaszar Regulatory
           </Link>
           <p className="font-body-md text-on-surface-variant max-w-md">
             Precision regulatory compliance for supplements, cosmetics, and
@@ -94,7 +94,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="mt-stack-xl pt-stack-md border-t-[3px] border-on-surface flex flex-col gap-2 sm:flex-row sm:justify-between font-ui-mono text-ui-mono text-on-surface-variant uppercase">
-        <span>© {new Date().getFullYear()} Agota Csaszar</span>
+        <span>© {new Date().getFullYear()} Csaszar Regulatory</span>
         <span>Regulatory Excellence · Est. 2014</span>
       </div>
     </footer>

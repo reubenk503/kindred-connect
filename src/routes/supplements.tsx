@@ -231,10 +231,10 @@ const HTML = `<!-- TopNavBar -->
 export const Route = createFileRoute("/supplements")({
   head: () => ({
     meta: [
-      { title: "Supplement Regulatory Compliance | Agota Csaszar" },
-      { name: "description", content: "Supplement Regulatory Compliance | Agota Csaszar" },
-      { property: "og:title", content: "Supplement Regulatory Compliance | Agota Csaszar" },
-      { property: "og:description", content: "Supplement Regulatory Compliance | Agota Csaszar" },
+      { title: "Supplement Regulatory Compliance | Csaszar Regulatory" },
+      { name: "description", content: "Supplement Regulatory Compliance | Csaszar Regulatory" },
+      { property: "og:title", content: "Supplement Regulatory Compliance | Csaszar Regulatory" },
+      { property: "og:description", content: "Supplement Regulatory Compliance | Csaszar Regulatory" },
     ],
   }),
   component: Page,

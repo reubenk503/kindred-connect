@@ -123,7 +123,7 @@ const HTML = `<!-- TopNavBar -->
 <div class="relative z-10 text-center flex flex-col items-center">
 <h2 class="reveal font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl mb-stack-lg uppercase leading-none">Ready for <br/> <span class="text-primary-fixed">Compliance?</span></h2>
 <p class="font-body-lg text-body-lg mb-stack-xl max-w-2xl opacity-80">
-                    Join hundreds of successful brands that trust Agota Csaszar for seamless market entry. Our experts are ready to audit your portfolio.
+                    Join hundreds of successful brands that trust Csaszar Regulatory for seamless market entry. Our experts are ready to audit your portfolio.
                 </p>
 <button class="bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps px-6 sm:px-12 py-4 sm:py-6 border-[3px] border-surface brutalist-shadow-hover transition-all rounded-full uppercase text-base sm:text-xl max-w-full" onclick="window.location.href='/contact'">
                     Secure Your Consultation
@@ -159,10 +159,10 @@ const HTML = `<!-- TopNavBar -->
 export const Route = createFileRoute("/cosmetics")({
   head: () => ({
     meta: [
-      { title: "Cosmetics Regulatory Compliance | Agota Csaszar" },
-      { name: "description", content: "Cosmetics Regulatory Compliance | Agota Csaszar" },
-      { property: "og:title", content: "Cosmetics Regulatory Compliance | Agota Csaszar" },
-      { property: "og:description", content: "Cosmetics Regulatory Compliance | Agota Csaszar" },
+      { title: "Cosmetics Regulatory Compliance | Csaszar Regulatory" },
+      { name: "description", content: "Cosmetics Regulatory Compliance | Csaszar Regulatory" },
+      { property: "og:title", content: "Cosmetics Regulatory Compliance | Csaszar Regulatory" },
+      { property: "og:description", content: "Cosmetics Regulatory Compliance | Csaszar Regulatory" },
     ],
   }),
   component: Page,

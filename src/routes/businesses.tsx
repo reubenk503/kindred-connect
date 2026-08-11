@@ -52,13 +52,13 @@ const COMPANIES = [
 export const Route = createFileRoute("/businesses")({
   head: () => ({
     meta: [
-      { title: "Businesses Worked With | Agota Csaszar Regulatory" },
+      { title: "Businesses Worked With | Csaszar Regulatory" },
       {
         name: "description",
         content:
           "Brands and businesses Agota has supported with regulatory and quality work, including Oriflame, Neal's Yard Remedies, Dyson and Unilever.",
       },
-      { property: "og:title", content: "Businesses Worked With | Agota Csaszar Regulatory" },
+      { property: "og:title", content: "Businesses Worked With | Csaszar Regulatory" },
       {
         property: "og:description",
         content:
