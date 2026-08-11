@@ -20,7 +20,6 @@ const HTML = `<!-- TopNavBar -->
 </div>
 <div class="frame-hover reveal md:col-span-4 relative h-[300px] sm:h-[400px] md:h-auto overflow-hidden md:overflow-visible">
 <div class="absolute inset-0 border-[3px] border-on-surface bg-secondary-container z-0 overflow-hidden">
-<img src="/images/architecture.jpg" alt="Structured geometric facade representing regulatory frameworks" class="w-full h-full object-cover"/>
 </div>
 
 </div>

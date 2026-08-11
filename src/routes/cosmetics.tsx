@@ -23,7 +23,6 @@ const HTML = `<!-- TopNavBar -->
 </div>
 </div>
 <div class="frame-hover reveal hidden md:block md:col-span-5 relative bg-surface-container-highest md:h-[400px] overflow-hidden">
-<img src="/images/lab-cosmetics.jpg" alt="Cosmetics laboratory bench with amber glass bottles and glassware" class="absolute inset-0 w-full h-full object-cover"/>
 
 </div>
 </section>

@@ -93,7 +93,7 @@ const HTML = `<!-- TopNavBar -->
 <!-- Map Placeholder -->
 <section class="px-grid-margin py-stack-xl bg-primary-container">
 <div class="frame-hover reveal h-[300px] sm:h-[400px] w-full border-[3px] border-on-surface relative grayscale contrast-125 overflow-hidden">
-<div class="w-full h-full bg-cover bg-center" data-alt="High contrast map of the Gillingham, Dorset area." style="background-image: url('/images/map-dorset.jpg')"></div>
+<div class="w-full h-full bg-cover bg-center" data-alt="High contrast map of the Gillingham, Dorset area."></div>
 <div class="absolute bottom-4 right-4 sm:bottom-10 sm:right-10 bg-on-surface text-surface p-4 sm:p-6 border-[3px] border-surface brutalist-shadow max-w-[calc(100%-2rem)]">
 <p class="font-label-caps text-label-caps mb-2">CURRENT LOCATION</p>
 <p class="font-headline-lg text-xl sm:text-2xl">GILLINGHAM, DORSET (GMT)</p>
