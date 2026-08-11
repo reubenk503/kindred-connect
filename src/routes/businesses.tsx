@@ -5,6 +5,8 @@ import { initRevealAnimations } from "../lib/animations";
 const COMPANIES = [
   {
     name: "Oriflame",
+    initials: "OF",
+    wordmark: "font-display-xl text-2xl md:text-3xl uppercase tracking-[0.18em]",
     domain: "oriflame.com",
     sector: "Beauty & Cosmetics",
     tag: "EU CPR",
@@ -13,6 +15,8 @@ const COMPANIES = [
   },
   {
     name: "Neal's Yard Remedies",
+    initials: "NY",
+    wordmark: "font-body-lg text-xl md:text-2xl italic tracking-tight",
     domain: "nealsyardremedies.com",
     sector: "Natural & Organic",
     tag: "UK SCPN",
@@ -21,6 +25,8 @@ const COMPANIES = [
   },
   {
     name: "Dyson",
+    initials: "DY",
+    wordmark: "font-display-xl text-2xl md:text-3xl uppercase tracking-[0.32em]",
     domain: "dyson.com",
     sector: "Technology & Personal Care",
     tag: "Quality Systems",
@@ -29,6 +35,8 @@ const COMPANIES = [
   },
   {
     name: "Unilever",
+    initials: "UL",
+    wordmark: "font-subheading text-2xl md:text-3xl tracking-tight",
     domain: "unilever.com",
     sector: "Global FMCG",
     tag: "Multi-market",
