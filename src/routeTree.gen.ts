@@ -13,7 +13,6 @@ import { Route as SupplementsRouteImport } from './routes/supplements'
 import { Route as MedicalDevicesRouteImport } from './routes/medical-devices'
 import { Route as CosmeticsRouteImport } from './routes/cosmetics'
 import { Route as ContactRouteImport } from './routes/contact'
-import { Route as CaseStudiesRouteImport } from './routes/case-studies'
 import { Route as BusinessesRouteImport } from './routes/businesses'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -38,11 +37,6 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CaseStudiesRoute = CaseStudiesRouteImport.update({
-  id: '/case-studies',
-  path: '/case-studies',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const BusinessesRoute = BusinessesRouteImport.update({
   id: '/businesses',
   path: '/businesses',
@@ -63,7 +57,6 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/businesses': typeof BusinessesRoute
-  '/case-studies': typeof CaseStudiesRoute
   '/contact': typeof ContactRoute
   '/cosmetics': typeof CosmeticsRoute
   '/medical-devices': typeof MedicalDevicesRoute
@@ -73,7 +66,6 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/businesses': typeof BusinessesRoute
-  '/case-studies': typeof CaseStudiesRoute
   '/contact': typeof ContactRoute
   '/cosmetics': typeof CosmeticsRoute
   '/medical-devices': typeof MedicalDevicesRoute
@@ -84,7 +76,6 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/businesses': typeof BusinessesRoute
-  '/case-studies': typeof CaseStudiesRoute
   '/contact': typeof ContactRoute
   '/cosmetics': typeof CosmeticsRoute
   '/medical-devices': typeof MedicalDevicesRoute
@@ -96,7 +87,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/businesses'
-    | '/case-studies'
     | '/contact'
     | '/cosmetics'
     | '/medical-devices'
@@ -106,7 +96,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/businesses'
-    | '/case-studies'
     | '/contact'
     | '/cosmetics'
     | '/medical-devices'
@@ -116,7 +105,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/businesses'
-    | '/case-studies'
     | '/contact'
     | '/cosmetics'
     | '/medical-devices'
@@ -127,7 +115,6 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   BusinessesRoute: typeof BusinessesRoute
-  CaseStudiesRoute: typeof CaseStudiesRoute
   ContactRoute: typeof ContactRoute
   CosmeticsRoute: typeof CosmeticsRoute
   MedicalDevicesRoute: typeof MedicalDevicesRoute
@@ -164,13 +151,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/case-studies': {
-      id: '/case-studies'
-      path: '/case-studies'
-      fullPath: '/case-studies'
-      preLoaderRoute: typeof CaseStudiesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/businesses': {
       id: '/businesses'
       path: '/businesses'
@@ -199,7 +179,6 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   BusinessesRoute: BusinessesRoute,
-  CaseStudiesRoute: CaseStudiesRoute,
   ContactRoute: ContactRoute,
   CosmeticsRoute: CosmeticsRoute,
   MedicalDevicesRoute: MedicalDevicesRoute,
@@ -208,13 +187,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
